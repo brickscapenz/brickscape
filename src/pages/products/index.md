@@ -1,6 +1,6 @@
 ---
 templateKey: product-page
-title: Our Projects
+title: Our Products
 image: /img/jumbotron.jpg
 heading: What we offer
 description: >-

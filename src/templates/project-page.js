@@ -6,7 +6,7 @@ import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 
-export const ProjectPageTemplate = ({
+export const ProductPageTemplate = ({
   image,
   title,
   heading,
@@ -131,12 +131,12 @@ ProductPageTemplate.propTypes = {
   }),
 }
 
-const ProjectPage = ({ data }) => {
+const ProductPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
-      <ProjectPageTemplate
+      <ProductPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}

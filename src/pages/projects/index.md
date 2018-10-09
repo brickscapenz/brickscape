@@ -1,6 +1,6 @@
 ---
 templateKey: project-page
-title: Our  asd
+title: Our Projects
 image: /img/jumbotron.jpg
 heading: What we offer
 description: >-

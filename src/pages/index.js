@@ -10,7 +10,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-        Test
+        
       </Layout>
     )
   }

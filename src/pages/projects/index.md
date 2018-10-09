@@ -1,7 +1,6 @@
 ---
-templateKey: 'project-page'
-path: /projects
-title: Our Coffee
+templateKey: project-page
+title: Our  Projects
 image: /img/jumbotron.jpg
 heading: What we offer
 description: >-
@@ -99,3 +98,4 @@ pricing:
       plan: Custom
       price: '??'
 ---
+

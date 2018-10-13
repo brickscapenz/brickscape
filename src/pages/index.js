@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Scripts from '../components/Scripts'
+import { Button } from 'react-bootstrap'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -10,7 +12,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-        
+        <Scripts></Scripts>        
       </Layout>
     )
   }

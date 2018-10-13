@@ -4,29 +4,29 @@ import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
 
 const Navbar = () => (
-  <nav className="navbar is-transparent">
-    <div className="container">
+  <nav className="navWrap">
+    <div className="navInner">
       <div className="navbar-brand">
-        <Link to="/" className="navbar-item">
+        <Link to="/">
           <figure className="image">
-            <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+            <h1 className="brandLogo">Brickscape</h1>
           </figure>
         </Link>
       </div>
       <div className="navbar-start">
-        <Link className="navbar-item" to="/projects">
+        <Link className="navbarItem" to="/projects">
           Projects
         </Link>
-        <Link className="navbar-item" to="/about">
+        <Link className="navbarItem" to="/about">
           About
         </Link>
-        <Link className="navbar-item" to="/contact">
+        <Link className="navbarItem" to="/contact">
           Contact
         </Link>
       </div>
       <div className="navbar-end">
         <a
-          className="navbar-item"
+          className="navbarItem"
           href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
           target="_blank"
           rel="noopener noreferrer"

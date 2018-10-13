@@ -7,6 +7,49 @@ $kaldi-red-invert: #fff
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 
+body 
+  font-family: 'Lato', sans-serif !important;
+
+.navWrap
+  position: absolute;
+  display: block;
+  min-width: 980px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 500;
+  transition: all .25s ease;
+  box-sizing: border-box;
+  padding: 30px 0;
+
+.navInner
+  position: relative;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+.navbarItem
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  padding: 18px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &:hover
+    color: white;
+    border-bottom: 1px solid white !important;
+
+.brandLogo
+  font-size: 32px;
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+  text-transform: uppercase;
+
 .content .taglist
   list-style: none
   margin-bottom: 0
@@ -40,3 +83,73 @@ $primary-invert: $kaldi-red-invert
   margin-top: 0 !important
 
 @import "~bulma"
+
+.fullPageWrap
+    display: block;
+    width: 100vw;
+    min-height: 100vh;
+    background: #000;
+
+.mainHero 
+  position: relative;
+  display: block;
+  min-width: 980px;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+
+  .heroHeading
+    position: relative;
+    display: block;
+    width: 690px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 28px;
+    color: #cbcbcb;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    .heroHeadingContent
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 100px;
+
+      h2
+        padding: 0;
+        font-size: 55px;
+        font-weight: 800;
+        letter-spacing: .15em;
+        line-height: 65px;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+
+      p 
+        position: relative;
+        display: block;
+        padding: 7px 0 0 0;
+        font-size: 16px;
+        line-height: 28px;
+        color: #fff;
+        text-align: center;
+
+.buttonDefault 
+  background-color: #eee;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 30px;
+  width: 200px;
+  
+  .linkArrow 
+    margin-left: 20px;

@@ -8,37 +8,37 @@ export const ContactPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-        <section className="section section--gradient">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="section">
-                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                  {title}
-                </h2>
-                <form method="post" action="#">
-                  <div className="column is-10 is-offset-1">
-                    <label htmlFor="name">Name</label>
-                    <input type="text" name="name" id="name" />
-                  </div>
-                  <div className="column is-10 is-offset-1">
-                    <label htmlFor="email">Email</label>
-                    <input type="text" name="email" id="email" />
-                  </div>
-                  <div className="column is-10 is-offset-1">
-                    <label htmlFor="message">Message</label>
-                    <textarea name="message" id="message" rows="6"></textarea>
-                  </div>
-                  <ul className="actions">
-                    <li><input type="submit" value="Send Message" className="special" /></li>
-                    <li><input type="reset" value="Clear" /></li>
-                  </ul>
-                </form>
-              </div>
+    <div className="container pt-5 pb-5">
+      <div className="row">
+        <div className="col-lg-6">
+        <h3 className="pb-3">Contact Us</h3>
+          <form>
+            <div className="form-group">
+              <label htmlFor="name">Name</label>
+              <input className="form-control" id="name" />
             </div>
-          </div>
+            <div className="form-group">
+              <label htmlFor="exampleFormControlInput1">Email address</label>
+              <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+            </div>
+            <div className="form-group">
+              <label htmlFor="message">Message</label>
+              <textarea className="form-control" id="message" rows="5"></textarea>
+            </div>
+            <div className="form-group float-right">
+              <input type="submit" className="btn btn-success" />
+            </div>
+          </form>
         </div>
-      </section>
+        <div className="col-lg-6">
+        <iframe
+      style={{ border: 0, width: 100, height: "100%", width: "100%" }}
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAUIIW5SBqG4uZLPEYbMhJqHj-7k10hGhw
+        &q=7+Gardenia+Close,Melville,New+Zealand" allowfullscreen>
+    </iframe>
+        </div>
+      </div>
+  </div>
   )
 }
 

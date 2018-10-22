@@ -8,13 +8,15 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <div className="heroHeading">
-      <div className="heroHeadingContent">
-        <h2>Committed to the Art of the Craft</h2>
-        <p>What is the Brickscape Way?</p>
-        <a className="buttonDefault">Watch Video <i className="fas fa-arrow-right linkArrow"></i></a>
+  <div className="container pt-5 pb-5">
+    <div className="row">
+      <div className="col-lg-12">
+        <h3 className="pb-3">{title}</h3>
+        <p>{content}</p>
+        <div class="background-image"></div>
       </div>
     </div>
+  </div>
   )
 }
 

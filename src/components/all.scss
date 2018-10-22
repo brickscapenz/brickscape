@@ -1,0 +1,65 @@
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+.navbar {
+    position: absolute;
+    width: 100%;
+}
+
+.jumbotron {
+    height: 50vh;
+}
+
+.jumbotron-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.home-hero {
+    height: 100vh;
+}
+
+.page-footer {
+    background-color: #383E49;
+    color: white;
+
+    a {
+        color: white;
+    }
+
+    .btn {
+        padding: 5px 30px;
+    }
+}
+
+.footer-copyright {
+    background-color: #2D323A;
+    color: white;
+
+    a {
+        color: white;
+    }
+}
+
+.background-image {
+    background-image: url("https://via.placeholder.com/640x480");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        padding-bottom: 56.25%;
+    }
+}
+
+.seperate {
+    justify-content: flex-end;
+    width: 100%;
+}

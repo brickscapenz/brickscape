@@ -1,7 +1,7 @@
 import React from 'react'
 
 const toRender = () => {
-  return window.location.pathname == '/' ? "jumbotron jumbotron-fluid home-hero" : "jumbotron jumbotron-fluid hero";
+  return typeof window !== 'undefined'&& window.location.pathname == '/' ? "jumbotron jumbotron-fluid home-hero" : "jumbotron jumbotron-fluid hero";
 }
 
 const backgroundImage = (image) => {

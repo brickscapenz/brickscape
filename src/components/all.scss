@@ -6,6 +6,7 @@
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
     width: 100%;
+    z-index: 100;
 }
 
 .nav-item {
@@ -25,6 +26,35 @@
 
 .home-hero {
     height: 100vh;
+    padding: 0;
+    position: relative;
+}
+
+.hero-content {
+    z-index: 3;
+}
+
+.hero {
+    padding: 0;
+    position: relative;
+}
+
+.overlay-home {   
+    background-color: black; 
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.overlay {   
+    background-color: black; 
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
 }
 
 .page-footer {

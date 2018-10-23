@@ -8,7 +8,7 @@ const Navbar = () => (
     <div className="container">
       <div className="row">
         <div>
-          <Link className="nav-link text-dark" to="/">
+          <Link className="nav-link text-white" to="/">
             <figure className="image">
               <h1>Brickscape</h1>
             </figure>
@@ -17,17 +17,17 @@ const Navbar = () => (
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li class="nav-item">
-              <Link className="nav-link" to="/projects">
+              <Link className="nav-link text-white" to="/projects">
                 Gallery
         </Link>
             </li>
             <li class="nav-item">
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link text-white" to="/about">
                 About
         </Link>
             </li>
             <li class="nav-item">
-              <Link className="nav-link" to="/contact">
+              <Link className="nav-link text-white" to="/contact">
                 Contact
         </Link>
             </li>

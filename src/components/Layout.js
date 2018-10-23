@@ -6,12 +6,12 @@ import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import './all.scss'
 
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ children, image }) => (
   <div className="fullPageWrap">
     <Helmet title="Home | Gatsby + Netlify CMS" />
     <Navbar />
-    <Hero />
-    <div className="mainHero">{children}</div>
+    <Hero image={image} />
+    <div className="container pb-5">{children}</div>
     <Footer />
   </div>
 )

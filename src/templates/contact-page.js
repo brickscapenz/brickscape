@@ -8,33 +8,34 @@ export const ContactPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <div className="container pt-5 pb-5">
+    <div className="container-fluid pr-0 pl-0">
       <div className="row">
         <div className="col-lg-6">
-        <h3 className="pb-3">Contact Us</h3>
-          <form>
-            <div className="form-group">
-              <label htmlFor="name">Name</label>
-              <input className="form-control" id="name" />
+          <div className="contact-form-container pt-5 pb-5">
+            <div className="contact-form">
+            <h3 className="pb-3">Contact Us</h3>
+            <form>
+              <div className="form-group">
+                <label htmlFor="name">Name</label>
+                <input className="form-control" id="name" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="exampleFormControlInput1">Email address</label>
+                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea className="form-control" id="message" rows="5"></textarea>
+              </div>
+              <div className="form-group float-right">
+                <input type="submit" className="btn btn-success" />
+              </div>
+            </form>
             </div>
-            <div className="form-group">
-              <label htmlFor="exampleFormControlInput1">Email address</label>
-              <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
-            </div>
-            <div className="form-group">
-              <label htmlFor="message">Message</label>
-              <textarea className="form-control" id="message" rows="5"></textarea>
-            </div>
-            <div className="form-group float-right">
-              <input type="submit" className="btn btn-success" />
-            </div>
-          </form>
+          </div>
         </div>
         <div className="col-lg-6">
-        <iframe
-      style={{ border: 0, width: 100, height: "100%", width: "100%" }}
-      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAUIIW5SBqG4uZLPEYbMhJqHj-7k10hGhw
-        &q=7+Gardenia+Close,Melville,New+Zealand" allowfullscreen>
+        <iframe className="map" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAUIIW5SBqG4uZLPEYbMhJqHj-7k10hGhw&q=7+Gardenia+Close,Melville,New+Zealand" allowfullscreen>
     </iframe>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const toRender = () => {
-  return typeof window !== 'undefined'&& window.location.pathname == '/' ? "jumbotron jumbotron-fluid home-hero" : "jumbotron jumbotron-fluid hero";
+  return typeof window !== 'undefined' && window.location.pathname == '/' ? "jumbotron jumbotron-fluid home-hero" : "jumbotron jumbotron-fluid hero";
 }
 
 const backgroundImage = (image) => {
@@ -12,7 +12,7 @@ const backgroundImage = (image) => {
 
 const Hero = (image) => (
   <div class={toRender()}>
-      <div className={window.location.pathname == '/' ? 'overlay-home' : 'overlay'}></div>
+      <div className={window !== 'undefined' && window.location.pathname == '/' ? 'overlay-home' : 'overlay'}></div>
       <div class="jumbotron-container text-white" style={backgroundImage(image)}>
         <div className="container hero-content">
           <h1 class="display-4">Fluid jumbotron</h1>

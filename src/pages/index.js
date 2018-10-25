@@ -7,13 +7,16 @@ import Content, { HTMLContent } from '../components/Content'
 
 export default class IndexPage extends React.Component {
   render() {
+
     const { markdownRemark } = this.props.data
+    
     return (
       <Layout image={markdownRemark.frontmatter.image}>   
         <HomePageTemplate
           title={markdownRemark.frontmatter.title}
           content={markdownRemark.html}
           image={markdownRemark.frontmatter.image}
+          imageBanner={markdownRemark.frontmatter.imageBanner}
         />
       </Layout>
     )
@@ -32,6 +35,9 @@ export const HomePageQuery = graphql`
         title
         image
         templateKey
+        imageBanner {
+          image
+        }
       }
       excerpt
     }

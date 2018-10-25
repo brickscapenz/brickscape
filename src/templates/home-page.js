@@ -10,7 +10,17 @@ const SetImage = (image) => {
   }
 }
 
-const HomePageTemplate = ({ image, title, content, contentComponent }) => {
+const AddImage = (images) => {
+  return images.map(image => {
+    return (
+      <div className="col-md-4 pl-0 pr-0">
+        <div className="background-image" style={SetImage(image.image)}></div>
+      </div>
+    );
+  });
+}
+
+const HomePageTemplate = ({ imageBanner, title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -21,15 +31,7 @@ const HomePageTemplate = ({ image, title, content, contentComponent }) => {
       </div>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-4 pl-0 pr-0">
-            <div className="background-image" style={SetImage(image)}></div>
-          </div>
-          <div className="col-md-4 pl-0 pr-0">
-            <div className="background-image" style={SetImage(image)}></div>
-          </div>
-          <div className="col-md-4 pl-0 pr-0">
-            <div className="background-image" style={SetImage(image)}></div>
-          </div>
+         {AddImage(imageBanner)}
         </div>
         <div className="row">
           <div className="content-block">
@@ -51,6 +53,7 @@ HomePageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   image: PropTypes.string,
+  imageBanner: PropTypes.array
 }
 
 export default HomePageTemplate

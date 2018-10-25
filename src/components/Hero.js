@@ -11,12 +11,12 @@ const backgroundImage = (image) => {
 }
 
 const Hero = (image) => (
-  <div class={toRender()}>
+  <div className={toRender()}>
       <div className={typeof window !== 'undefined' && window.location.pathname == '/' ? 'overlay-home' : 'overlay'}></div>
-      <div class="jumbotron-container text-white" style={backgroundImage(image)}>
+      <div className="jumbotron-container text-white" style={backgroundImage(image)}>
         <div className="container hero-content">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+          <h1 className="display-4">Fluid jumbotron</h1>
+          <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
         </div>
       </div>
     </div>

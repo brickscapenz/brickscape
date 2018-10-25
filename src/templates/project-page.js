@@ -17,7 +17,7 @@ export const ProjectPageTemplate = ({
   fullImage,
   pricing,
 }) => (
-  <div>
+  <div className="container content-container">
    
     
   </div>

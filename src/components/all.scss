@@ -39,6 +39,10 @@
     position: relative;
 }
 
+.content-container {
+    padding: 100px 0 110px 0;
+}
+
 .overlay-home {   
     background-color: black; 
     height: 100%;
@@ -129,4 +133,8 @@
     @media (min-width: 992px) {
         height: 100%;
     }
+}
+
+.page-title {
+    text-align: center;
 }

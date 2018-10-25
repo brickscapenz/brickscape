@@ -16,8 +16,8 @@ const HomePageTemplate = ({ image, title, content, contentComponent }) => {
   return (
     <div>
       <div className='container content-container'>
-        <h3 className="page-title">{title}</h3>
-        {content}
+        <h3 className="page-title pb-3">{title}</h3>
+        <div class="text-center" dangerouslySetInnerHTML={{ __html: content }}></div>
       </div>
       <div className="container-fluid">
         <div className="row">

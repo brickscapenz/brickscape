@@ -11,9 +11,9 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   <div className="container content-container">
     <div className="row">
       <div className="col-lg-12">
-        <h3 className="pb-3">{title}</h3>
-        <p>{content}</p>
-        <div class="background-image"></div>
+        <h3 className="page-title pb-3">{title}</h3>
+        <div className="pb-3" dangerouslySetInnerHTML={{ __html: content }}></div>
+        <div className="background-image"></div>
       </div>
     </div>
   </div>

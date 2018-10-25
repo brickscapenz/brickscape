@@ -13,7 +13,7 @@
     padding: 10px 30px;
 }
 
-.jumbotron {
+.jumbotron-hero {
     height: 50vh;
 }
 
@@ -137,4 +137,11 @@
 
 .page-title {
     text-align: center;
+}
+
+.content-block {
+    background-color: #e9ecef;
+    margin: 0 auto;
+    padding: 100px 0 110px 0;
+    width: 100%;
 }

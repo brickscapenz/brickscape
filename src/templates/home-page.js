@@ -18,7 +18,7 @@ const HomePageTemplate = ({ image, title, content, contentComponent }) => {
       <div className='container content-container'>
         <h3 className="page-title">{title}</h3>
         {content}
-      </div>      
+      </div>
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-4 pl-0 pr-0">
@@ -31,8 +31,19 @@ const HomePageTemplate = ({ image, title, content, contentComponent }) => {
             <div className="background-image" style={SetImage(image)}></div>
           </div>
         </div>
+        <div className="row">
+          <div className="content-block">
+            <div className="jumbotron-container text-center">
+              <div className="container hero-content">
+                <h1 className="display-4">Contact Us</h1>
+                <p className="lead">If you want to find out more about us, please get in contact.</p>
+                <button className="btn btn-danger btn-lg">Lets Go</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
+    </div>
   )
 }
 

@@ -11,11 +11,12 @@ const SetImage = (image) => {
 }
 
 const AddImage = (images) => {
-  
-  return images && images.map((image, index) => {
+
+  return images && images.map((image) => {
+    debugger
     return (
       <div className="col-md-4 pl-0 pr-0">
-        <div className="background-image" key={index} style={SetImage(image.image)}></div>
+        <div className="background-image" style={SetImage(image.image)}></div>
       </div>
     );
   });
@@ -28,12 +29,10 @@ const HomePageTemplate = ({ imageBanner, title, content, contentComponent }) => 
     <div>
       <div className='container content-container'>
         <h2 className="page-title pb-3">{title}</h2>
-        <div class="text-center" dangerouslySetInnerHTML={{ __html: content }}></div>
+        <div className="text-center" dangerouslySetInnerHTML={{ __html: content }}></div>
       </div>
+
       <div className="container-fluid">
-        <div className="row">
-          {AddImage(imageBanner)}
-        </div>
         <div className="row">
           <div className="content-block content-block-quote">
             <div className="jumbotron-container text-center">
@@ -44,12 +43,43 @@ const HomePageTemplate = ({ imageBanner, title, content, contentComponent }) => 
           </div>
         </div>
         <div className="row">
-          <div className="content-block bg-white">
-           
+          {AddImage(imageBanner)}
+        </div>
+        <div className="content-block">
+        <div className="container">
+          <div className="row">
+            <div class="col-lg-4 animated fade-in-bottom">
+              <div className="card">
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div className="card">
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div className="card">
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="row">
-          <div className="content-block">
+        </div>
+        <div className="row bg-white">
+          <div className="content-block bg-white">
             <div className="jumbotron-container text-center">
               <div className="container hero-content">
                 <h2>Contact Us</h2>

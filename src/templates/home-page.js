@@ -11,10 +11,11 @@ const SetImage = (image) => {
 }
 
 const AddImage = (images) => {
-  return images.map(image => {
+  
+  return images && images.map((image, index) => {
     return (
       <div className="col-md-4 pl-0 pr-0">
-        <div className="background-image" style={SetImage(image.image)}></div>
+        <div className="background-image" key={index} style={SetImage(image.image)}></div>
       </div>
     );
   });
@@ -26,18 +27,32 @@ const HomePageTemplate = ({ imageBanner, title, content, contentComponent }) => 
   return (
     <div>
       <div className='container content-container'>
-        <h3 className="page-title pb-3">{title}</h3>
+        <h2 className="page-title pb-3">{title}</h2>
         <div class="text-center" dangerouslySetInnerHTML={{ __html: content }}></div>
       </div>
       <div className="container-fluid">
         <div className="row">
-         {AddImage(imageBanner)}
+          {AddImage(imageBanner)}
+        </div>
+        <div className="row">
+          <div className="content-block content-block-quote">
+            <div className="jumbotron-container text-center">
+              <div className="container hero-content">
+                <p className="lead m-0">We are an integrated team who pride ourselves on providing a professional and personal service to our clients.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="content-block bg-white">
+           
+          </div>
         </div>
         <div className="row">
           <div className="content-block">
             <div className="jumbotron-container text-center">
               <div className="container hero-content">
-                <h1 className="display-4">Contact Us</h1>
+                <h2>Contact Us</h2>
                 <p className="lead">If you want to find out more about us, please get in contact.</p>
                 <button className="btn btn-danger btn-lg">Lets Go</button>
               </div>

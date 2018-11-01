@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import animate from 'animate.css'
 
 const SetImage = (image) => {
   return {
@@ -28,7 +29,7 @@ const HomePageTemplate = ({ imageBanner, title, content, contentComponent }) => 
   return (
     <div>
       <div className='container content-container'>
-        <h2 className="page-title pb-3">{title}</h2>
+        <h1 className="page-title pb-3">{title}</h1>
         <div className="text-center" dangerouslySetInnerHTML={{ __html: content }}></div>
       </div>
 
@@ -46,44 +47,44 @@ const HomePageTemplate = ({ imageBanner, title, content, contentComponent }) => 
           {AddImage(imageBanner)}
         </div>
         <div className="content-block">
-        <div className="container">
-          <div className="row">
-            <div class="col-lg-4 animated fade-in-bottom">
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
+          <div className="container">
+            <div className="row pb-4">
+              <h1 className="text-center full-width">Services</h1>
+            </div>
+            <div className="row pb-5">
+              <p className="text-center full-width">We complete amzing works that inspires</p>
+            </div>
+            <div className="row pb-5">
+              <div class="card col-lg-4 text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+              <div class="card col-lg-4 text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+              <div class="card col-lg-4 text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
+            <div className="row justify-content-md-center pt-4">
+              <a href="#" className="btn btn-success btn-lg">Discover the full service offering</a>
             </div>
           </div>
-        </div>
         </div>
         <div className="row bg-white">
           <div className="content-block bg-white">
             <div className="jumbotron-container text-center">
               <div className="container hero-content">
-                <h2>Contact Us</h2>
-                <p className="lead">If you want to find out more about us, please get in contact.</p>
+                <h1 className="pb-2">Contact Us</h1>
+                <p className="pb-3">If you want to find out more about us, please get in contact.</p>
                 <button className="btn btn-danger btn-lg">Lets Go</button>
               </div>
             </div>

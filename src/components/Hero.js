@@ -1,24 +1,47 @@
 import React from 'react'
 
-const toRender = () => {
-  return typeof window !== 'undefined' && !(window.location.pathname.length > 1) ? "jumbotron-hero jumbotron-fluid home-hero mb-0" : "jumbotron-hero jumbotron-fluid hero mb-0";
+const isHomePage = () => {
+   return typeof window !== 'undefined' && !(window.location.pathname.length > 1);
 }
 
-const backgroundImage = (image) => {
+const jumboType = () => {
+  return isHomePage() ? "jumbotron-hero jumbotron-fluid home-hero mb-0" : "jumbotron-hero jumbotron-fluid hero mb-0";
+}
+
+const backgroundImage = (props) => {
   return {
-    backgroundImage: `url('${image.image}')`
+    backgroundImage: `url('${props.image}')`
   }
 }
 
-const Hero = (image) => (
-  <div className={toRender()}>
-      <div className={typeof window !== 'undefined' && window.location.pathname == '/' ? 'overlay-home' : 'overlay'}></div>
-      <div className="jumbotron-container text-white" style={backgroundImage(image)}>
-        <div className="container hero-content">
-          <h1 className="display-4">Fluid jumbotron</h1>
-          <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+const homeContent = (props) => {
+  debugger;
+  if (!isHomePage()) {
+    return (
+      <div className="jumbotron-container text-white" style={backgroundImage(props)}>
+      <div className="container contact-content">
+        <h1 className="display-4 text-center">{props.heading}</h1>
+      </div>
+    </div>
+    );
+  } else {
+    return (
+      <div className="jumbotron-container text-white" style={backgroundImage(props)}>
+        <div className="container hero-content-container">
+          <div className="hero-content">
+            <h1 className="display-4">Masters in everything Bricks!</h1>
+            <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+          </div>
         </div>
       </div>
+    );
+  }
+}
+
+const Hero = (props) => (
+  <div className={jumboType()}>
+      <div className={typeof window !== 'undefined' && window.location.pathname == '/' ? 'overlay-home' : 'overlay'}></div>
+      {homeContent(props)}
     </div>
 )
 

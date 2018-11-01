@@ -10,7 +10,10 @@ const TemplateWrapper = ({ children, image }) => (
   <div className="fullPageWrap">
     <Helmet title="Home | Gatsby + Netlify CMS" />
     <Navbar />
-    <Hero image={image} />       
+    <Hero 
+      image={image} 
+      heading={children.props.title}
+      />       
       {children}
     <Footer />
   </div>

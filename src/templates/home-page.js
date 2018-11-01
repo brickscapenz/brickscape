@@ -29,22 +29,22 @@ const HomePageTemplate = ({ imageBanner, title, content, contentComponent }) => 
   return (
     <div>
       <div className='container content-container'>
-        <h1 className="page-title pb-3">{title}</h1>
+        <h1 className="page-title pb-4">{title}</h1>
         <div className="text-center" dangerouslySetInnerHTML={{ __html: content }}></div>
       </div>
 
-      <div className="container-fluid">
+      <div className="container-fluid">        
         <div className="row">
-          <div className="content-block content-block-quote">
+          {AddImage(imageBanner)}
+        </div>
+        <div className="row">
+          <div className="content-block bg-white content-block-quote">
             <div className="jumbotron-container text-center">
-              <div className="container hero-content">
+              <div className="container contact-content">
                 <p className="lead m-0">We are an integrated team who pride ourselves on providing a professional and personal service to our clients.</p>
               </div>
             </div>
           </div>
-        </div>
-        <div className="row">
-          {AddImage(imageBanner)}
         </div>
         <div className="row">
           <div className="content-block">
@@ -86,8 +86,8 @@ const HomePageTemplate = ({ imageBanner, title, content, contentComponent }) => 
           <div className="content-block bg-white" style={{ backgroundImage: `url('/img/coffee-beans.jpg')` }}>
             <div className="contact-container">
               <div className="jumbotron-container text-white" style={{ width: "65%" }}>
-                <div className="container hero-content">
-                  <p className="pb- contact-text">If you want to find out more about us, please get in contact.</p>
+                <div className="container contact-content">
+                  <p className="contact-text">If you want to find out more about us, please get in contact.</p>
                   <p className="text-white">Perhaps you’re planning to digitize your collection. Or maybe you just need more information about how Veridian digitization, preservation or hosting could work for your organisation. How about a free pilot project and demo installation? Just ask.</p>
                   <button className="btn btn-danger btn-lg">Lets Go</button>
                 </div>

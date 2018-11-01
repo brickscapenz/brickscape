@@ -46,46 +46,51 @@ const HomePageTemplate = ({ imageBanner, title, content, contentComponent }) => 
         <div className="row">
           {AddImage(imageBanner)}
         </div>
-        <div className="content-block">
-          <div className="container">
-            <div className="row pb-4">
-              <h1 className="text-center full-width">Services</h1>
-            </div>
-            <div className="row pb-5">
-              <p className="text-center full-width">We complete amzing works that inspires</p>
-            </div>
-            <div className="row pb-5">
-              <div class="card col-lg-4 text-center">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <div className="row">
+          <div className="content-block">
+            <div className="container">
+              <div className="row pb-4">
+                <h1 className="text-center full-width">Services</h1>
+              </div>
+              <div className="row pb-5">
+                <p className="text-center full-width">We complete amzing works that inspires</p>
+              </div>
+              <div className="row pb-5">
+                <div class="card col-lg-4 text-center">
+                  <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>
+                <div class="card col-lg-4 text-center">
+                  <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>
+                <div class="card col-lg-4 text-center">
+                  <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  </div>
                 </div>
               </div>
-              <div class="card col-lg-4 text-center">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
+              <div className="row justify-content-md-center pt-4">
+                <a href="#" className="btn btn-success btn-lg">Discover the full service offering</a>
               </div>
-              <div class="card col-lg-4 text-center">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
-              </div>
-            </div>
-            <div className="row justify-content-md-center pt-4">
-              <a href="#" className="btn btn-success btn-lg">Discover the full service offering</a>
             </div>
           </div>
         </div>
-        <div className="row bg-white">
-          <div className="content-block bg-white">
-            <div className="jumbotron-container text-center">
-              <div className="container hero-content">
-                <h1 className="pb-2">Contact Us</h1>
-                <p className="pb-3">If you want to find out more about us, please get in contact.</p>
-                <button className="btn btn-danger btn-lg">Lets Go</button>
+        <div className="row relative">
+          <div className="overlay"></div>
+          <div className="content-block bg-white" style={{ backgroundImage: `url('/img/coffee-beans.jpg')` }}>
+            <div className="contact-container">
+              <div className="jumbotron-container text-white" style={{ width: "65%" }}>
+                <div className="container hero-content">
+                  <p className="pb- contact-text">If you want to find out more about us, please get in contact.</p>
+                  <p className="text-white">Perhaps you’re planning to digitize your collection. Or maybe you just need more information about how Veridian digitization, preservation or hosting could work for your organisation. How about a free pilot project and demo installation? Just ask.</p>
+                  <button className="btn btn-danger btn-lg">Lets Go</button>
+                </div>
               </div>
             </div>
           </div>

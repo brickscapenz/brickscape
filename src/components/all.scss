@@ -163,3 +163,18 @@ h1, h2, h3 {
 .full-width {
     width: 100%;
 }
+
+.relative {
+    position: relative;
+}
+
+.contact-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contact-text {
+    font-size: 48px;
+    font-weight: bold;
+}

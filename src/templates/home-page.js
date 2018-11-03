@@ -76,7 +76,7 @@ const HomePageTemplate = ({ imageBanner, title, content, contentComponent }) => 
                 </div>
               </div>
               <div className="row justify-content-md-center pt-4">
-                <a href="#" className="btn btn-success btn-lg">Discover the full service offering</a>
+                <a href="#" className="btn btn-default btn-lg btn-center">Discover the full service offering</a>
               </div>
             </div>
           </div>
@@ -89,7 +89,7 @@ const HomePageTemplate = ({ imageBanner, title, content, contentComponent }) => 
                 <div className="container contact-content">
                   <p className="contact-text">If you want to find out more about us, please get in contact.</p>
                   <p className="text-white">Perhaps you’re planning to digitize your collection. Or maybe you just need more information about how Veridian digitization, preservation or hosting could work for your organisation. How about a free pilot project and demo installation? Just ask.</p>
-                  <button className="btn btn-danger btn-lg">Lets Go</button>
+                  <button className="btn btn-default">Lets Go</button>
                 </div>
               </div>
             </div>

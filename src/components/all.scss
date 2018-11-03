@@ -6,6 +6,19 @@ h1, h2, h3 {
     font-weight: 300;
 }
 
+.btn-default {
+    background-color: #333;
+    border-radius: 3px;
+    border: 1px solid #b1b0b0;
+    color: white;
+    padding: 15px 30px;
+}
+
+.btn-default:hover {
+    border: 1px solid white;
+    color: white;
+}
+
 .navbar {
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
@@ -16,6 +29,18 @@ h1, h2, h3 {
 .nav-item {
     padding: 10px 30px;
 }
+
+.nav-item:after {
+    display: block;
+    content: '';
+    margin: 0 auto;
+    border-bottom: solid 2px white;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    width: 30%;
+}
+
+.nav-item:hover:after { transform: scaleX(1); }
 
 .jumbotron-hero {
     height: 50vh;
@@ -195,4 +220,8 @@ h1, h2, h3 {
 .contact-text {
     font-size: 48px;
     font-weight: bold;
+}
+
+.btn-center {
+    margin: 0 auto;
 }

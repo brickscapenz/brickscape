@@ -6,7 +6,7 @@ import logo from '../img/logo.svg'
 const Navbar = () => (
   <nav className="navbar navbar-expand-lg navbar-light">
     <div className="container">
-      <div className="row">
+      <div className="row d-flex justify-content-between" style={{ width: '100%'}}>
         <div>
           <Link className="nav-link text-white" to="/">
             <figure className="image">
@@ -14,8 +14,8 @@ const Navbar = () => (
             </figure>
           </Link>
         </div>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
+        <div className="collapse navbar-collapse d-flex justify-content-end" style={{ 'margin-right': '-20px'}} id="navbarSupportedContent">
+          <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link text-white" to="/projects">
                 Gallery
@@ -26,7 +26,7 @@ const Navbar = () => (
                 About
         </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item pr-0">
               <Link className="nav-link text-white" to="/contact">
                 Contact
         </Link>

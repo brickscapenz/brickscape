@@ -11,7 +11,7 @@ export default class IndexPage extends React.Component {
     const { markdownRemark } = this.props.data
     
     return (
-      <Layout image={markdownRemark.frontmatter.image}>   
+      <Layout image={markdownRemark.frontmatter.image} homepage={true}>   
         <HomePageTemplate
           title={markdownRemark.frontmatter.title}
           content={markdownRemark.html}

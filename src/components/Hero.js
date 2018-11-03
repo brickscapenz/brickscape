@@ -1,11 +1,8 @@
 import React from 'react'
 
-const isHomePage = () => {
-   return typeof window !== 'undefined' && !(window.location.pathname.length > 1);
-}
-
-const jumboType = () => {
-  return isHomePage() ? "jumbotron-hero jumbotron-fluid home-hero mb-0" : "jumbotron-hero jumbotron-fluid hero mb-0";
+const jumboType = (props) => {
+  debugger
+  return props.isHomepage ? "jumbotron-hero jumbotron-fluid home-hero mb-0" : "jumbotron-hero jumbotron-fluid hero mb-0";
 }
 
 const backgroundImage = (props) => {
@@ -16,7 +13,7 @@ const backgroundImage = (props) => {
 
 const homeContent = (props) => {
   debugger;
-  if (!isHomePage()) {
+  if (!props.isHomepage) {
     return (
       <div className="jumbotron-container text-white" style={backgroundImage(props)}>
       <div className="container contact-content">
@@ -39,10 +36,10 @@ const homeContent = (props) => {
 }
 
 const Hero = (props) => (
-  <div className={jumboType()}>
-      <div className={typeof window !== 'undefined' && window.location.pathname == '/' ? 'overlay-home' : 'overlay'}></div>
-      {homeContent(props)}
-    </div>
+  <div className={jumboType(props)}>
+    <div className={typeof window !== 'undefined' && window.location.pathname == '/' ? 'overlay-home' : 'overlay'}></div>
+    {homeContent(props)}
+  </div>
 )
 
 export default Hero

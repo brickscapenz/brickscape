@@ -27,7 +27,7 @@ const Footer = () => (
         <h5 class="mb-1">Contact us now</h5>
       </li>
       <li class="list-inline-item">
-        <a href="#!" class="btn btn-danger btn-rounded">Lets go!</a>
+        <a href="#!" class="btn btn-default btn-rounded">Lets go!</a>
       </li>
     </ul>
 

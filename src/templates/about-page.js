@@ -5,7 +5,6 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
 
   return (
   <div className="container content-container">
@@ -14,6 +13,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
         <h3 className="page-title pb-3">{title}</h3>
         <div className="pb-3" dangerouslySetInnerHTML={{ __html: content }}></div>
         <div className="background-image"></div>
+        <div class="text-center">Our team</div>
       </div>
     </div>
   </div>

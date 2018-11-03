@@ -28,7 +28,7 @@ export const ContactPageTemplate = ({ title, content, contentComponent }) => {
                 <textarea className="form-control" id="message" rows="5"></textarea>
               </div>
               <div className="form-group float-right">
-                <input type="submit" className="btn btn-success" />
+                <input type="submit" className="btn btn-default" />
               </div>
             </form>
             </div>

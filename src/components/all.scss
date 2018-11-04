@@ -20,21 +20,25 @@ h1, h2, h3 {
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0);
-    position: absolute;
+    position: relative;
     width: 100%;
     z-index: 100;
 }
 
 .nav-item {
-    padding: 10px 30px;
+    font-weight: bold;
+    padding: 10px 30px;    
 }
 
-.nav-item:after {
+.nav-link {    
+    color: #333 !important;
+}
+
+.nav-item:after {    
     display: block;
     content: '';
     margin: 0 auto;
-    border-bottom: solid 2px white;  
+    border-bottom: solid 2px black;  
     transform: scaleX(0);  
     transition: transform 250ms ease-in-out;
     width: 30%;
@@ -73,9 +77,17 @@ h1, h2, h3 {
     text-align: left;
 
     h1 {
-        @media (min-width: 1200px) {
+        font-size: 32px;
+        font-weight: bold;
+            
+        @media (min-width: 992px) {
+            font-size: 48px;
             font-weight: bold;
+        }
+
+        @media (min-width: 1200px) {
             font-size: 72px;
+            font-weight: bold;
         }
     }
 }
@@ -90,7 +102,15 @@ h1, h2, h3 {
 }
 
 .content-container {
-    padding: 100px 0 110px 0;
+    padding: 50px 0 60px 0;
+
+    @media (min-width: 992px) {
+        padding: 75px 0 85px 0;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 100px 0 110px 0;
+    }
 }
 
 .overlay-home {   
@@ -143,6 +163,8 @@ h1, h2, h3 {
 }
 
 .background-image-display {
+    margin: 0;
+
     &:before {
         content: "";
         display: block;
@@ -194,8 +216,16 @@ h1, h2, h3 {
 .content-block {
     background-color: #f7f7f7;
     margin: 0 auto;
-    padding: 100px 0 110px 0;
+    padding: 50px 0 60px 0;
     width: 100%;
+
+    @media (min-width: 992px) {
+        padding: 75px 0 85px 0;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 100px 0 110px 0;
+    }
 }
 
 .content-block-quote {

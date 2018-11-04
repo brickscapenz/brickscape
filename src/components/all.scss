@@ -53,6 +53,10 @@ h1, h2, h3 {
     justify-content: center;
 }
 
+.jumbotron-container-info {
+    flex-direction: row;
+}
+
 .home-hero {
     height: 100vh;
     padding: 0;
@@ -61,13 +65,12 @@ h1, h2, h3 {
 
 .hero-content-container {
     display: flex;
-    justify-content: flex-end;
     z-index: 3;
 }
 
 .hero-content {
     width: 50%;
-    text-align: right;
+    text-align: left;
 
     h1 {
         @media (min-width: 1200px) {
@@ -131,13 +134,16 @@ h1, h2, h3 {
 }
 
 .background-image {
-    background-image: url("https://via.placeholder.com/640x480");
     background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	margin-bottom: 40px;
+	overflow: hidden;
+	position: relative;
+}
 
+.background-image-display {
     &:before {
         content: "";
         display: block;
@@ -224,4 +230,14 @@ h1, h2, h3 {
 
 .btn-center {
     margin: 0 auto;
+}
+
+.services-row {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+}
+
+.services-row:nth-child(2) {
+    flex-direction: row-reverse;
 }

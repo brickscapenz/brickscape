@@ -17,7 +17,7 @@ const AddImage = (images) => {
     debugger
     return (
       <div className="col-md-4 pl-0 pr-0">
-        <div className="background-image" style={SetImage(image.image)}></div>
+        <div className="background-image background-image-display" style={SetImage(image.image)}></div>
       </div>
     );
   });
@@ -83,9 +83,78 @@ const HomePageTemplate = ({ imageBanner, title, content, contentComponent }) => 
         </div>
         <div className="row relative">
           <div className="overlay"></div>
-          <div className="content-block bg-white" style={{ backgroundImage: `url('/img/coffee-beans.jpg')` }}>
+          <div className="content-block bg-white background-image" style={{ backgroundImage: `url('/img/coffee-beans.jpg')` }}>
+            <div className="contact-container d-flex justify-content-end">
+              <div className="jumbotron-container jumbotron-container-info text-white" style={{ width: "65%" }}>
+                <div className="container contact-content">
+                  <p className="contact-text text-right">Making Bricklaying fast and affordable</p>
+                  <p className="text-white text-right">Perhaps you’re planning to digitize your collection. Or maybe you just need more information about how Veridian digitization, preservation or hosting could work for your organisation. How about a free pilot project and demo installation? Just ask.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="content-block bg-white">
+            <div className="container">
+              <div className="row pb-4">
+                <h1 className="text-center full-width">Why choose us?</h1>
+              </div>
+              <div className="row pb-5">
+                <p className="text-center full-width">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div className="row pb-5">
+              <div class="card col-lg-4 bg-white text-center">
+                  <div class="card-body">
+                    <i class="fas fa-plus fa-3x pb-3"></i>
+                    <h5 class="card-title">Saftey First</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>   
+                <div class="card col-lg-4 bg-white text-center">
+                  <div class="card-body">
+                  <i class="fas fa-trophy fa-3x pb-3"></i>
+                    <h5 class="card-title">Top Rated</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>    
+                <div class="card col-lg-4 bg-white text-center">
+                  <div class="card-body">
+                  <i class="fas fa-home fa-3x pb-3"></i>
+                    <h5 class="card-title">Bricklaying Experts</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>   
+                <div class="card col-lg-4 bg-white text-center">
+                  <div class="card-body">
+                    <i class="fas fa-heart fa-3x pb-3"></i>
+                    <h5 class="card-title">Community</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>    
+                <div class="card col-lg-4 bg-white text-center">
+                  <div class="card-body">
+                    <i class="fas fa-dollar-sign fa-3x pb-3"></i>
+                    <h5 class="card-title">Affordable</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>    
+                <div class="card col-lg-4 bg-white text-center">
+                  <div class="card-body">
+                    <i class="fas fa-thumbs-up fa-3x pb-3"></i>
+                    <h5 class="card-title">Satisfaction</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>             
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row relative">
+          <div className="overlay"></div>
+          <div className="content-block bg-white background-image" style={{ backgroundImage: `url('/img/coffee-beans.jpg')` }}>
             <div className="contact-container">
-              <div className="jumbotron-container text-white" style={{ width: "65%" }}>
+              <div className="jumbotron-container jumbotron-container-info text-white" style={{ width: "65%" }}>
                 <div className="container contact-content">
                   <p className="contact-text">If you want to find out more about us, please get in contact.</p>
                   <p className="text-white">Perhaps you’re planning to digitize your collection. Or maybe you just need more information about how Veridian digitization, preservation or hosting could work for your organisation. How about a free pilot project and demo installation? Just ask.</p>

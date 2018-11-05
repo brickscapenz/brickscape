@@ -1,8 +1,7 @@
 ---
 templateKey: home-page
-path: "/"
-image: /img/jumbotron.jpg
 title: Brickscape
+image: /img/foundations.jpg
 imageBanner:
   - image: /img/flavor_wheel.jpg
   - image: /img/chemex.jpg

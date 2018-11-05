@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
-import bootstrap from 'bootstrap/dist/js/bootstrap.min.js'
+import "jquery"
+import 'bootstrap';
 
 const Navbar = () => (
   <nav className="navbar navbar-expand-lg navbar-light">

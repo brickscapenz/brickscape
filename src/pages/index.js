@@ -29,7 +29,7 @@ IndexPage.propTypes = {
 
 export const HomePageQuery = graphql`
   {
-    markdownRemark(frontmatter: { path: { eq: "/" }}) {
+    markdownRemark(frontmatter: { templateKey: { eq: "home-page" }}) {
       html
       frontmatter {
         title

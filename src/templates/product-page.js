@@ -6,15 +6,14 @@ import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 
-const AllServices = (services) = {
-}
+
 
 export const ProductPageTemplate = ({
   image,
   title,
   heading,
   description,
-  services,
+  //services,
 }) => (
   <div className="container-fluid">
     <div className="row services-row">
@@ -37,7 +36,7 @@ ProductPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
-  testimonials: PropTypes.array,
+  //testimonials: PropTypes.array,
 }
 
 const ProductPage = ({ data }) => {
@@ -50,7 +49,7 @@ const ProductPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         description={frontmatter.description}
-        services={frontmatter.services}
+        //services={frontmatter.services}
       />
     </Layout>
   )
@@ -74,10 +73,6 @@ export const productPageQuery = graphql`
         image
         heading
         description      
-        testimonials {
-          image
-          description
-        }
       }
     }
   }

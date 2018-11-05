@@ -11,9 +11,9 @@ export const ContactPageTemplate = ({ title, content, contentComponent }) => {
     <div className="container-fluid pr-0 pl-0">
       <div className="row">
         <div className="col-lg-6">
-          <div className="contact-form-container pt-5 pb-5">
+          <div className="contact-form-container">
             <div className="contact-form">
-            <h3 className="pb-3">Contact Us</h3>
+            <h1 className="full-width pb-5">Contact us</h1>
             <form>
               <div className="form-group">
                 <label htmlFor="name">Name</label>

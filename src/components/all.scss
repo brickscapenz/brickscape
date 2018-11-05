@@ -25,6 +25,16 @@ h1, h2, h3 {
     z-index: 100;
 }
 
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
 .nav-item {
     font-weight: bold;
     padding: 10px 30px;    
@@ -34,17 +44,19 @@ h1, h2, h3 {
     color: #333 !important;
 }
 
-.nav-item:after {    
-    display: block;
-    content: '';
-    margin: 0 auto;
-    border-bottom: solid 2px black;  
-    transform: scaleX(0);  
-    transition: transform 250ms ease-in-out;
-    width: 30%;
-}
+@media (min-width: 992px) {
+    .nav-item:after {    
+        display: block;
+        content: '';
+        margin: 0 auto;
+        border-bottom: solid 2px black;  
+        transform: scaleX(0);  
+        transition: transform 250ms ease-in-out;
+        width: 30%;
+    }
 
-.nav-item:hover:after { transform: scaleX(1); }
+    .nav-item:hover:after { transform: scaleX(1); }
+}
 
 .jumbotron-hero {
     height: 50vh;
@@ -183,14 +195,17 @@ h1, h2, h3 {
 }
 
 .contact-form {
+    padding: 50px 0 60px 0;
     padding-left: 12px;
     width: 720px;
 
     @media (min-width: 992px) {
+        padding: 75px 0 85px 0;
         width: 450px;
     }
 
     @media (min-width: 1200px) {
+        padding: 100px 0 110px 0;
         width: 550px;
     }
 }

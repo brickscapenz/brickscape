@@ -2,10 +2,29 @@ import React from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
-import "jquery"
-import 'bootstrap';
 
-const Navbar = () => (
+
+
+export default class Navbar extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { 
+      expanded: false,  
+    };
+  }
+
+  expand = () => {
+    debugger
+    this.state.expanded ? this.setState({ expanded: false }) : this.setState({ expanded: true });
+  }
+
+  expandedNavbar = () => {
+    debugger
+    return this.state.expanded ? 'navbar-expanded collapse navbar-collapse' : 'collapse navbar-collapse';
+  }
+  render() {
+  return (
   <nav className="navbar navbar-expand-lg navbar-light">
     <div className="container">
       <div className="row d-flex justify-content-between" style={{ width: '100%' }}>
@@ -14,10 +33,10 @@ const Navbar = () => (
               <h1 className="heading"><strong>Brickscape</strong></h1>
           </Link>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" onClick={this.expand}>
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse " style={{ 'margin-right': '-20px' }} id="navbarSupportedContent">
+        <div className={this.expandedNavbar()} style={{ 'margin-right': '-20px' }}>
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link" to="/projects">
@@ -39,6 +58,5 @@ const Navbar = () => (
       </div>
     </div>
   </nav>
-)
-
-export default Navbar
+  )}
+};

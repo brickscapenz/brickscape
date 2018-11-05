@@ -30,6 +30,11 @@ h1, h2, h3 {
     z-index: 100;
 }
 
+.navbar-expanded {
+    display: block !important;
+    height: 180px;
+}
+
 .navbar-nav {
     display: flex;
     justify-content: flex-end;

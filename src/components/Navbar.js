@@ -10,9 +10,7 @@ const Navbar = () => (
       <div className="row d-flex justify-content-between" style={{ width: '100%' }}>
         <div>
           <Link className="nav-link text-black" to="/">
-            <figure className="image">
-              <h1><strong>Brickscape</strong></h1>
-            </figure>
+              <h1 className="heading"><strong>Brickscape</strong></h1>
           </Link>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

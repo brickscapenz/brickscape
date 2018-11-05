@@ -1,9 +1,14 @@
 @import "~bulma/sass/utilities/initial-variables";
 @import "~bootstrap/scss/bootstrap.scss";
 @import "~@fortawesome/fontawesome-free/css/all.css";
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&subset=latin-ext,vietnamese');
 
 h1, h2, h3 {
     font-weight: 300;
+}
+
+.heading {
+    font-family: 'Alfa Slab One', cursive;
 }
 
 .btn-default {

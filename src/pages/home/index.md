@@ -1,7 +1,7 @@
 ---
 templateKey: home-page
 title: Brickscape
-image: /img/foundations.jpg
+image: /img/chemex.jpg
 imageBanner:
   - image: /img/flavor_wheel.jpg
   - image: /img/chemex.jpg

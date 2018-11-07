@@ -14,7 +14,6 @@ const SetImage = (image) => {
 const AddImage = (images) => {
 
   return images && images.map((image) => {
-    debugger
     return (
       <div className="col-md-4 pl-0 pr-0">
         <div className="background-image background-image-display" style={SetImage(image.image)}></div>
@@ -85,10 +84,10 @@ const HomePageTemplate = ({ imageBanner, title, content, contentComponent }) => 
           <div className="overlay"></div>
           <div className="content-block bg-white background-image" style={{ backgroundImage: `url('/img/coffee-beans.jpg')` }}>
             <div className="contact-container d-flex justify-content-end">
-              <div className="jumbotron-container jumbotron-container-info text-white" style={{ width: "65%" }}>
+              <div className="jumbotron-container jumbotron-container-info text-white">
                 <div className="container contact-content">
-                  <p className="contact-text text-right">Making Bricklaying fast and affordable</p>
-                  <p className="text-white text-right">Perhaps you’re planning to digitize your collection. Or maybe you just need more information about how Veridian digitization, preservation or hosting could work for your organisation. How about a free pilot project and demo installation? Just ask.</p>
+                  <p className="contact-text">Making Bricklaying fast and affordable</p>
+                  <p className="text-white">Perhaps you’re planning to digitize your collection. Or maybe you just need more information about how Veridian digitization, preservation or hosting could work for your organisation. How about a free pilot project and demo installation? Just ask.</p>
                 </div>
               </div>
             </div>
@@ -154,7 +153,7 @@ const HomePageTemplate = ({ imageBanner, title, content, contentComponent }) => 
           <div className="overlay"></div>
           <div className="content-block bg-white background-image" style={{ backgroundImage: `url('/img/coffee-beans.jpg')` }}>
             <div className="contact-container">
-              <div className="jumbotron-container jumbotron-container-info text-white" style={{ width: "65%" }}>
+              <div className="jumbotron-container jumbotron-container-info text-white">
                 <div className="container contact-content">
                   <p className="contact-text">If you want to find out more about us, please get in contact.</p>
                   <p className="text-white">Perhaps you’re planning to digitize your collection. Or maybe you just need more information about how Veridian digitization, preservation or hosting could work for your organisation. How about a free pilot project and demo installation? Just ask.</p>

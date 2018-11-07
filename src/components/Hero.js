@@ -1,7 +1,6 @@
 import React from 'react'
 
 const jumboType = (props) => {
-  debugger
   return props.isHomepage ? "jumbotron-hero jumbotron-fluid home-hero mb-0" : "jumbotron-hero jumbotron-fluid hero mb-0";
 }
 
@@ -12,7 +11,6 @@ const backgroundImage = (props) => {
 }
 
 const homeContent = (props) => {
-  debugger;
   if (!props.isHomepage) {
     return (
       <div className="jumbotron-container text-white" style={backgroundImage(props)}>

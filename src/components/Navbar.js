@@ -15,12 +15,10 @@ export default class Navbar extends React.Component {
   }
 
   expand = () => {
-    debugger
     this.state.expanded ? this.setState({ expanded: false }) : this.setState({ expanded: true });
   }
 
   expandedNavbar = () => {
-    debugger
     return this.state.expanded ? 'navbar-expanded collapse navbar-collapse' : 'collapse navbar-collapse';
   }
   render() {

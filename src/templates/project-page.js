@@ -3,15 +3,24 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
-const AddImages = (imageGallery) => {
-  var a = imageGallery.map((image) => {
-    return (
-      <div className="col-lg-6 gallery-image">
-       <img src={image.image} style={{ width: '100%', height: 'auto' }} />
-      </div>
-    )
-  })
-  return a
+const AddImages = (images) => {
+  let columnOne = '';
+  let columnTwo = '';
+
+  debugger
+
+  images.forEach((image, index) => {
+    if (index % 2 == 0) {
+      columnOne += `<div class="background-image background-image-display gallery-image" style="background-image: url(${image.image})"></div>`;
+    } else {
+      columnTwo += `<div class="background-image background-image-display gallery-image" style="background-image: url(${image.image})"></div>`;
+    }
+  });
+
+  var a = {
+    __html: `<div class="row"><div class="col-lg-6">${columnOne}</div><div class="col-lg-6">${columnTwo}</div></div>`
+  }
+  return a;
 }
 
 export const ProjectPageTemplate = ({
@@ -22,8 +31,11 @@ export const ProjectPageTemplate = ({
   imageGallery,
 }) => (
   <div className="container content-container">
-    <div className="row">
-        {AddImages(imageGallery)}
+    <div className="gallery-heading-container">
+      <h3 className="page-title pb-3">Gallery</h3>
+      <div dangerouslySetInnerHTML={{ __html: description }}></div>
+    </div>
+    <div dangerouslySetInnerHTML={AddImages(imageGallery)}>
     </div>
   </div>
 )

@@ -183,7 +183,8 @@ h1, h2, h3 {
 .background-image {
     background-position: center center;
 	background-repeat: no-repeat;
-	background-size: cover;
+    background-size: cover;
+    height: auto;
 	margin-bottom: 40px;
 	overflow: hidden;
 	position: relative;
@@ -310,6 +311,14 @@ h1, h2, h3 {
     flex-direction: row-reverse;
 }
 
+.gallery-heading-container {
+    padding-bottom: 75px;
+}
+
 .gallery-image {
-    margin-bottom: 30px;
+    margin-bottom: 0;
+
+    @media (min-width: 558px) {
+        margin-bottom: 30px;
+    }
 }

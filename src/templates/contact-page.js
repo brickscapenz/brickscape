@@ -13,7 +13,7 @@ export const ContactPageTemplate = ({ title, content, contentComponent }) => {
         <div className="col-lg-6">
           <div className="contact-form-container">
             <div className="contact-form">
-            <h1 className="full-width pb-5">Contact us</h1>
+            <h1 className="full-width pb-5">Contact Us</h1>
             <form>
               <div className="form-group">
                 <label htmlFor="name">Name</label>
@@ -53,7 +53,7 @@ const ContactPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <Layout image={post.frontmatter.heroImage}>
       <ContactPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
@@ -75,6 +75,7 @@ export const contactPageQuery = graphql`
       html
       frontmatter {
         title
+        heroImage
       }
     }
   }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 const Footer = () => (
   <footer class="page-footer font-small stylish-color-dark pt-4">
@@ -27,7 +28,9 @@ const Footer = () => (
         <h5 class="mb-1">Contact us now</h5>
       </li>
       <li class="list-inline-item">
-        <a href="#!" class="btn btn-default btn-rounded">Lets go!</a>
+        <Link className="btn btn-default btn-rounded" to="/contact">
+          Lets go!
+        </Link>
       </li>
     </ul>
 
@@ -61,7 +64,7 @@ const Footer = () => (
       </li>
     </ul>
     <div class="footer-copyright text-center py-3">© 2018 Copyright:
-        <a href="https://mdbootstrap.com/bootstrap-tutorial/"> Brickscape.com</a>
+        <span> Brickscape.com</span>
     </div>
 
   </footer>

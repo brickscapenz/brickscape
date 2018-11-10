@@ -322,3 +322,11 @@ h1, h2, h3 {
         margin-bottom: 30px;
     }
 }
+
+.about-heading-container {
+    padding: 0 20px 75px 20px;
+    
+    @media (min-width: 558px) {
+        padding: 0 0 75px 0;
+    }
+}

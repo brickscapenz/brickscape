@@ -1,5 +1,6 @@
 ---
 templateKey: 'contact-page'
 path: /contact
-title: Contact Us
+heroImage: /img/chemex.jpg
+title: Contact
 ---

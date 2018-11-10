@@ -10,8 +10,10 @@ export const AboutPageTemplate = ({ title, image, content }) => {
   <div className="container content-container">
     <div className="row">
       <div className="col-lg-12">
-        <h3 className="page-title pb-3">Brickscape</h3>
-        <div className="pb-3" dangerouslySetInnerHTML={{ __html: content }}></div>
+        <div className="about-heading-container">
+          <h3 className="page-title pb-3">Brickscape</h3>
+          <div dangerouslySetInnerHTML={{ __html: content }}></div>
+        </div>
         <div className="background-image background-image-display m-0" style={{ 'background-image': `url('${image}')`}}></div>
         <div class="text-center">Our team</div>
       </div>
@@ -30,7 +32,7 @@ const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <Layout image={post.frontmatter.heroImage}>
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
@@ -54,6 +56,7 @@ export const aboutPageQuery = graphql`
       frontmatter {
         title
         image
+        heroImage
       }
     }
   }

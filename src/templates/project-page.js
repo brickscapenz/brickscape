@@ -52,9 +52,8 @@ const ProjectPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
-    <Layout>
+    <Layout image={frontmatter.heroImage}>
       <ProjectPageTemplate
-        image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
         description={frontmatter.description}
@@ -79,7 +78,7 @@ export const projectPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        image
+        heroImage
         heading
         description        
         imageGallery {

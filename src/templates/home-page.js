@@ -75,7 +75,7 @@ const HomePageTemplate = ({ imageBanner, title, content, contentComponent }) => 
                   </div>
                 </div>
               </div>
-              <div className="row justify-content-sm-center pt-4">
+              <div className="row btn-container pt-4">
                 <Link className="nav-link" to="/products">
                   <a href="#" className="btn btn-default btn-lg btn-center">Discover the full service offering</a>
                 </Link>

@@ -8,7 +8,7 @@ export const ContactPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <div className="container-fluid pr-0 pl-0">
+    <div className="container-fluid pl-0">
       <div className="row">
         <div className="col-lg-6">
           <div className="contact-form-container">

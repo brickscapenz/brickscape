@@ -32,7 +32,7 @@ export const ProjectPageTemplate = ({
 }) => (
   <div className="container content-container">
     <div className="gallery-heading-container">
-      <h3 className="page-title pb-3">Gallery</h3>
+      <h1 className="page-title pb-3">Gallery</h1>
       <div dangerouslySetInnerHTML={{ __html: description }}></div>
     </div>
     <div dangerouslySetInnerHTML={AddImages(imageGallery)}>

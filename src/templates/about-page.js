@@ -11,7 +11,7 @@ export const AboutPageTemplate = ({ title, image, content }) => {
     <div className="row">
       <div className="col-lg-12">
         <div className="about-heading-container">
-          <h3 className="page-title pb-3">Brickscape</h3>
+          <h1 className="page-title pb-3">Brickscape</h1>
           <div dangerouslySetInnerHTML={{ __html: content }}></div>
         </div>
         <div className="background-image background-image-display m-0" style={{ 'background-image': `url('${image}')`}}></div>

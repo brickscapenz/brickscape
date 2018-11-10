@@ -29,7 +29,7 @@ export const ProductPageTemplate = ({
 }) => (
   <div className="container-fluid">
     <div className="container content-container">
-      <h3 className="page-title pb-3">Brickscape services</h3>
+      <h1 className="page-title pb-3">Brickscape services</h1>
       <p>{description}</p>
     </div>
     <div>

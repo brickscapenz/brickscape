@@ -382,7 +382,11 @@ h1, h2, h3 {
 }
 
 .services-content {
-    padding: 75px;
+    padding: 20px;
+
+    @media (min-width: 576px) {
+        padding: 75px;
+    }
 }
 
 .btn-container {

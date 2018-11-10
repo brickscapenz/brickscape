@@ -6,27 +6,34 @@ import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 
-
+const ServicesRow = (services) => {
+  return services.map((service) => {
+    return (
+      <div className="row services-row">
+        <div className="col-lg-6 background-image background-image-display" style={{ 'background-image': `url(${service.image})` }}></div>
+        <div className="col-lg-6 services-content">
+          <h3>{service.title}</h3>
+          <p>{service.description}</p>
+        </div>
+      </div>
+    );
+  });
+}
 
 export const ProductPageTemplate = ({
   image,
   title,
   heading,
   description,
-  //services,
+  services,
 }) => (
   <div className="container-fluid">
-    <div className="row services-row">
-      <div className="col-lg-6" style={{ 'background-color': 'blue' }}></div>
-      <div className="col-lg-6" style={{ 'background-color': 'red' }}></div>
+    <div className="container content-container">
+      <h3 className="page-title pb-3">Brickscape services</h3>
+      <p>{description}</p>
     </div>
-    <div className="row services-row">
-      <div className="col-lg-6" style={{ 'background-color': 'blue' }}></div>
-      <div className="col-lg-6" style={{ 'background-color': 'red' }}></div>
-    </div>
-    <div className="row services-row">
-      <div className="col-lg-6" style={{ 'background-color': 'blue' }}></div>
-      <div className="col-lg-6" style={{ 'background-color': 'red' }}></div>
+    <div>
+    {ServicesRow(services)}
     </div>
   </div>
 )
@@ -36,20 +43,19 @@ ProductPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
-  //testimonials: PropTypes.array,
+  services: PropTypes.array,
 }
 
 const ProductPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
-    <Layout>
-      <ProductPageTemplate
-        image={frontmatter.image}
+    <Layout image={frontmatter.heroImage}>
+      <ProductPageTemplate        
         title={frontmatter.title}
         heading={frontmatter.heading}
         description={frontmatter.description}
-        //services={frontmatter.services}
+        services={frontmatter.services}
       />
     </Layout>
   )
@@ -70,9 +76,14 @@ export const productPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        image
+        heroImage
         heading
-        description      
+        description    
+        services {
+          image
+          description
+          title
+        }  
       }
     }
   }

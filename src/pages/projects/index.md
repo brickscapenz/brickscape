@@ -1,6 +1,6 @@
 ---
 templateKey: project-page
-title: Our Projects
+title: Experienced in a wide range of projects
 path: projects
 heroImage: /img/chemex.jpg
 heading: What we offer

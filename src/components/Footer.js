@@ -13,6 +13,7 @@ const Footer = () => (
           </div>
           <div className="pt-3 pb-3 col-md-3 offset-md-5 d-flex justify-content-between">
             <span>Gallery</span>
+            <span>Services</span>
             <span>About</span>
             <span>Contact</span>
           </div>

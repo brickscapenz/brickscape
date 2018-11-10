@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
@@ -75,7 +76,9 @@ const HomePageTemplate = ({ imageBanner, title, content, contentComponent }) => 
                 </div>
               </div>
               <div className="row justify-content-md-center pt-4">
-                <a href="#" className="btn btn-default btn-lg btn-center">Discover the full service offering</a>
+                <Link className="nav-link" to="/products">
+                  <a href="#" className="btn btn-default btn-lg btn-center">Discover the full service offering</a>
+                </Link>
               </div>
             </div>
           </div>
@@ -86,8 +89,8 @@ const HomePageTemplate = ({ imageBanner, title, content, contentComponent }) => 
             <div className="contact-container d-flex justify-content-end">
               <div className="jumbotron-container jumbotron-container-info text-white">
                 <div className="container contact-content">
-                  <p className="contact-text">Making Bricklaying fast and affordable</p>
-                  <p className="text-white">Perhaps you’re planning to digitize your collection. Or maybe you just need more information about how Veridian digitization, preservation or hosting could work for your organisation. How about a free pilot project and demo installation? Just ask.</p>
+                  <p className="contact-text text-right">Making Bricklaying fast and affordable</p>
+                  <p className="text-white text-right">Perhaps you’re planning to digitize your collection. Or maybe you just need more information about how Veridian digitization, preservation or hosting could work for your organisation. How about a free pilot project and demo installation? Just ask.</p>
                 </div>
               </div>
             </div>

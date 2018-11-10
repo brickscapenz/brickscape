@@ -10,7 +10,7 @@ services:
   - image: /img/chemex.jpg
     title: Why do we use it?
     description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-  - image: /img/meeting-space.png
+  - image: /img/flavor_wheel.jpg
     title: Where does it come from?
     description: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
 description:

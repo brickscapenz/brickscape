@@ -34,7 +34,7 @@ export const ContactPageTemplate = ({ title, content, contentComponent }) => {
             </div>
           </div>
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg-6 fix-col">
         <iframe className="map" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAUIIW5SBqG4uZLPEYbMhJqHj-7k10hGhw&q=7+Gardenia+Close,Melville,New+Zealand" allowfullscreen>
     </iframe>
         </div>

@@ -8,7 +8,7 @@ const Footer = () => (
       <div class="row">
         <div class="col-lg-12 d-flex justify-content-between flex-wrap">
           <div className="col-lg-2 pt-3 pb-3">
-            <h5 class="font-weight-bold text-uppercase m-0 footer-heading">Brickscape</h5>
+            <h5 class="text-uppercase m-0 footer-heading">Brickscape</h5>
           </div>
           <div className="pt-3 pb-3 col-lg-auto offset-lg-auto d-flex justify-content-between">
             <span className="pl-2 pr-2">Gallery</span>

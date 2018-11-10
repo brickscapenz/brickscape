@@ -9,6 +9,11 @@ h1, h2, h3 {
 
 .heading {
     font-family: 'Alfa Slab One', cursive;
+    font-size: 32px;
+
+    @media (min-width: 576px) {
+        font-size: 40px
+    }
 }
 
 .btn-default {
@@ -16,7 +21,7 @@ h1, h2, h3 {
     border-radius: 3px;
     border: 1px solid #b1b0b0;
     color: white;
-    padding: 15px 30px;
+    padding: 10px 20px;
 }
 
 .btn-default:hover {
@@ -97,7 +102,7 @@ h1, h2, h3 {
 }
 
 .home-hero {
-    height: 100vh;
+    height: calc(100vh - 88px);
     padding: 0;
     position: relative;
 }
@@ -179,6 +184,7 @@ h1, h2, h3 {
 }
 
 .footer-heading {
+    font-family: 'Alfa Slab One', cursive;
     text-align: center;
 
     @media (min-width: 992px) {
@@ -351,10 +357,18 @@ h1, h2, h3 {
     }
 }
 
+.fix-col {
+    padding-right: 0;
+
+    @media (min-width: 576px) {
+        padding-right: 15px;
+    }
+}
+
 .gallery-image {
     margin-bottom: 0;
 
-    @media (min-width: 558px) {
+    @media (min-width: 576px) {
         margin-bottom: 30px;
     }
 }

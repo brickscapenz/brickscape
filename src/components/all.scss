@@ -32,7 +32,7 @@ h1, h2, h3 {
 
 .navbar-expanded {
     display: block !important;
-    height: 180px;
+    height: 240px;
 }
 
 .navbar-nav {
@@ -69,7 +69,15 @@ h1, h2, h3 {
 }
 
 .jumbotron-hero {
-    height: 50vh;
+    height: calc(100vh - 88px);
+
+    @media (min-width: 768px) {
+        height: calc(75vh - 88px);
+    }
+
+    @media (min-width: 992px) {
+        height: calc(50vh - 88px);
+    }
 }
 
 .jumbotron-container {
@@ -121,6 +129,18 @@ h1, h2, h3 {
 
 .contact-content {
     z-index: 3;
+
+    h1 {        
+        font-size: 32px;
+
+        @media (min-width: 768px) {
+            font-size: 44px
+        }
+
+        @media (min-width: 992px) {
+            font-size: 56px
+        }
+    }
 }
 
 .hero {
@@ -156,6 +176,14 @@ h1, h2, h3 {
     position: absolute;
     width: 100%;
     z-index: 2;
+}
+
+.footer-heading {
+    text-align: center;
+
+    @media (min-width: 992px) {
+        text-align: left;
+    }
 }
 
 .page-footer {

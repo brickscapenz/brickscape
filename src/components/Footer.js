@@ -6,16 +6,15 @@ const Footer = () => (
     <div class="container text-center text-md-left">
 
       <div class="row">
-
-        <div class="col-lg-12 d-flex justify-content-between">
+        <div class="col-lg-12 d-flex justify-content-between flex-wrap">
           <div className="col-lg-2 pt-3 pb-3">
-            <h5 class="font-weight-bold text-uppercase m-0">Brickscape</h5>
+            <h5 class="font-weight-bold text-uppercase m-0 footer-heading">Brickscape</h5>
           </div>
-          <div className="pt-3 pb-3 col-md-3 offset-md-5 d-flex justify-content-between">
-            <span>Gallery</span>
-            <span>Services</span>
-            <span>About</span>
-            <span>Contact</span>
+          <div className="pt-3 pb-3 col-lg-auto offset-lg-auto d-flex justify-content-between">
+            <span className="pl-2 pr-2">Gallery</span>
+            <span className="pl-2 pr-2">Services</span>
+            <span className="pl-2 pr-2">About</span>
+            <span className="pl-2 pr-2">Contact</span>
           </div>
         </div>
       </div>

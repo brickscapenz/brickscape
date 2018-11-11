@@ -1,10 +1,14 @@
 ---
 templateKey: home-page
-title: Brickscape
+heroTitle: Masters in Everything Brick
+heroContent: Quality brick and block laying services that stand out above the rest
 heroImage: /img/chemex.jpg
+bodyTitle: Brickscape
+bodyContent: A company whose primary focus is quality and optimum customer satisfaction. The team will tackle any brick and block laying project with professionalism and dedication.
+contactUsTitle: If you want to find out more about us, please get in contact
+contactUsImage: /img/coffee-beans.jpg
 imageBanner:
   - image: /img/flavor_wheel.jpg
   - image: /img/chemex.jpg
   - image: /img/products-grid2.jpg
 ---
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum

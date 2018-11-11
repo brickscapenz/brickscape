@@ -24,8 +24,8 @@ const homeContent = (props) => {
       <div className="jumbotron-container text-white" style={backgroundImage(props)}>
         <div className="container hero-content-container">
           <div className="hero-content">
-            <h1 className="display-4">Masters in everything Bricks!</h1>
-            <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <h1 className="display-4">Masters in Everything Brick</h1>
+            <p className="lead">Quality brick and block laying services that stand out above the rest</p>
           </div>
         </div>
       </div>

@@ -26,9 +26,14 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
           - {label: Hero Image, name: heroImage, widget: image}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Hero Title", name: "heroTitle", widget: "string"}
+          - {label: "Hero Content", name: "heroContent", widget: "string"}
+          - {label: "Body Title", name: "bodyTitle", widget: "string"}
+          - {label: "Body Content", name: "bodyContent", widget: "string"}
           - {label: Image Banner, name: imageBanner, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}
+          - {label: Why Choose Us, name: whyChooseUs, widget: list, fields: [{label: Icon, name: icon, widget: Text}, {label: Titel, name: title, widget: text}, {label: Text, name: text, widget: text}]}
+          - {label: "Contact Us Title", name: "contactUsTitle", widget: "string"}
+          - {label: Contact Us Image, name: contactUsImage, widget: image}
       - file: "src/pages/products/index.md"
         label: "Services Page"
         path: "products"

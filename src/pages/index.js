@@ -8,8 +8,9 @@ import Content, { HTMLContent } from '../components/Content'
 export default class IndexPage extends React.Component {
   render() {
 
-    const { markdownRemark } = this.props.data
-    debugger
+    const { markdownRemark } = this.props.data;
+    const props = markdownRemark.frontmatter;
+
     return (
       <Layout 
         image={markdownRemark.frontmatter.heroImage} 
@@ -17,7 +18,7 @@ export default class IndexPage extends React.Component {
         heroTitle={markdownRemark.frontmatter.heroTitle}
         herContent={markdownRemark.frontmatter.herContent}>   
         <HomePageTemplate
-          data={markdownRemark}
+          data={props}
         />
       </Layout>
     )

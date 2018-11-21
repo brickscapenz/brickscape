@@ -29,13 +29,13 @@ const HomePageTemplate = ({ data }) => {
   return (
     <div>
       <div className='container content-container'>
-        <h1 className="page-title pb-4">{data.frontmatter.bodyTitle}</h1>
-        <div className="text-center" dangerouslySetInnerHTML={{ __html: data.frontmatter.bodyContent }}></div>
+        <h1 className="page-title pb-4">{data && data.bodyTitle}</h1>
+        <div className="text-center" dangerouslySetInnerHTML={{  __html: data && data.bodyContent }}></div>
       </div>
 
       <div className="container-fluid">        
         <div className="row">
-          {AddImage(data.frontmatter.imageBanner)}
+          {AddImage(data && data.imageBanner)}
         </div>       
         <div className="row">
           <div className="content-block bg-white">
@@ -92,11 +92,11 @@ const HomePageTemplate = ({ data }) => {
         </div>
         <div className="row relative">
           <div className="overlay"></div>
-          <div className="content-block bg-white background-image" style={{ backgroundImage: `url(${data.frontmatter.contactUsImage})` }}>
+          <div className="content-block bg-white background-image" style={{ backgroundImage: `url(${data && data.contactUsImage})` }}>
             <div className="contact-container">
               <div className="jumbotron-container jumbotron-container-info text-white">
                 <div className="container contact-content">
-                  <p className="contact-text">{data.frontmatter.contactUsTitle}</p>
+                  <p className="contact-text">{data && data.contactUsTitle}</p>
                   <button className="btn btn-default">Lets Go</button>
                 </div>
               </div>

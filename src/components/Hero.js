@@ -13,7 +13,7 @@ const backgroundImage = (props) => {
 const homeContent = (props) => {
   if (!props.isHomepage) {
     return (
-      <div className="jumbotron-container text-white" style={backgroundImage(props)}>
+      <div className="jumbotron-container background-image text-white" style={backgroundImage(props)}>
       <div className="container contact-content">
         <h1 className="display-4 text-center">{props.heading}</h1>
       </div>
@@ -21,7 +21,7 @@ const homeContent = (props) => {
     );
   } else {
     return (
-      <div className="jumbotron-container text-white" style={backgroundImage(props)}>
+      <div className="jumbotron-container background-image text-white" style={backgroundImage(props)}>
         <div className="container hero-content-container">
           <div className="hero-content">
             <h1 className="display-4">Masters in Everything Brick</h1>

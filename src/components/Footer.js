@@ -33,36 +33,6 @@ const Footer = () => (
         </Link>
       </li>
     </ul>
-
-    <hr />
-
-    <ul class="list-unstyled list-inline text-center pb-4 pt-4">
-      <li class="list-inline-item">
-        <a class="btn-floating btn-fb mx-1 p-2">
-          <i class="fab fa-facebook fa-2x"></i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-tw mx-1 p-2">
-          <i class="fab fa-twitter fa-2x"></i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-gplus mx-1 p-2">
-          <i class="fab fa-google-plus fa-2x"></i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-li mx-1 p-2">
-          <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-dribbble mx-1 p-2">
-          <i class="fab fa-dribbble fa-2x"></i>
-        </a>
-      </li>
-    </ul>
     <div class="footer-copyright text-center py-3">© 2018 Copyright:
         <span> Brickscape.com</span>
     </div>

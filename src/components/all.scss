@@ -88,7 +88,7 @@ h1, h2, h3 {
 .jumbotron-container {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100% !important;
     justify-content: center;
 }
 

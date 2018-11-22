@@ -344,7 +344,7 @@ h1, h2, h3 {
     }
 }
 
-.services-row:nth-child(2) {
+.services-row:nth-child(2n) {
     flex-direction: row-reverse;
 }
 

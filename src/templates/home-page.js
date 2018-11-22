@@ -97,7 +97,9 @@ const HomePageTemplate = ({ data }) => {
               <div className="jumbotron-container jumbotron-container-info text-white">
                 <div className="container contact-content">
                   <p className="contact-text">{data && data.contactUsTitle}</p>
-                  <button className="btn btn-default">Lets Go</button>
+                  <Link className="btn btn-default btn-rounded" to="/contact">
+                    Lets go
+                  </Link>
                 </div>
               </div>
             </div>

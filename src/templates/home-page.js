@@ -110,11 +110,4 @@ const HomePageTemplate = ({ data }) => {
   )
 }
 
-HomePageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  image: PropTypes.string,
-  imageBanner: PropTypes.array
-}
-
 export default HomePageTemplate

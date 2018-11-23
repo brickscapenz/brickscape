@@ -31,10 +31,10 @@ export default class Navbar extends React.Component {
               <h1 className="heading"><strong>Brickscape</strong></h1>
           </Link>
         </div>
-        <button class="navbar-toggler" type="button" onClick={this.expand}>
-          <span class="navbar-toggler-icon"></span>
+        <button className="navbar-toggler" type="button" onClick={this.expand}>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div className={this.expandedNavbar()} style={{ 'margin-right': '-20px' }}>
+        <div className={this.expandedNavbar()} style={{ 'marginRight': '-20px' }}>
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link" to="/projects">

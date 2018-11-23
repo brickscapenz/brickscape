@@ -7,9 +7,7 @@ const AddImages = (images) => {
   let columnOne = '';
   let columnTwo = '';
 
-  debugger
-
-  images.forEach((image, index) => {
+  images && images.forEach((image, index) => {
     if (index % 2 == 0) {
       columnOne += `<div class="background-image background-image-display gallery-image" style="background-image: url(${image.image})"></div>`;
     } else {

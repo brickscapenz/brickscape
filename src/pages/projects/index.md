@@ -13,13 +13,11 @@ description: >-
   and more recently with desktop publishing software like Aldus PageMaker
   including versions of Lorem Ipsum
 imageGallery:
-  - image: /img/flavor_wheel.jpg
-  - image: /img/chemex.jpg
-  - image: /img/products-grid2.jpg
-  - image: /img/coffee1.jpeg
-  - image: /img/coffee2.jpeg
-  - image: /img/coffee3.jpeg
-  - image: /img/coffee4.jpeg
-  - image: /img/coffee5.jpeg
+  - image: /img/foundations.jpg
+  - image: /img/gallery-1-min.jpg
+  - image: /img/gallery-10-min.jpg
+  - image: /img/gallery-7-min.jpg
+  - image: /img/gallery-6-min.jpg
+  - image: /img/gallery-3-min.jpg
 ---
 

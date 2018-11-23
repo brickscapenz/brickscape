@@ -16,13 +16,13 @@ export const ContactPageTemplate = ({ title, content, contentComponent }) => {
             <h1 className="full-width pb-5">Contact Us</h1>
             <form>
               <div className="form-group">
-                <label className="pr-3">Call Us:</label>
-                <label>027 831 7559</label>
+                <label className="pr-3"><strong>Call Us:</strong></label>
+                <label><a href="tel:027 831 7559">027 831 7559</a></label>
               </div>
               <div className="form-group">
-                <label className="pr-3">Email us:</label>
-                <label className="pr-3">Ben@brickscape.co.nz</label>
-                <label className="pb-4">Felicity@brickscape.co.nz</label>
+                <label className="pr-3"><strong>Email us:</strong></label>
+                <label className="pr-3"><a href="mailto:ben@brickscape.co.nz">Ben@brickscape.co.nz</a></label>
+                <label className="pb-4"><a href="mailto:felicity@brickscape.co.nz">Felicity@brickscape.co.nz</a></label>
               </div>
               <div className="form-group">
                 <label htmlFor="name">Name</label>

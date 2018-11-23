@@ -1,6 +1,6 @@
 ---
 templateKey: project-page
-heroImage: /img/about-1-min.jpg
+heroImage: /img/services-offered-4-min.jpg
 title: Experienced in a wide range of projects
 heading: What we offer
 description: >-

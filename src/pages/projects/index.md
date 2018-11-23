@@ -1,6 +1,6 @@
 ---
 templateKey: project-page
-heroImage: /img/chemex.jpg
+heroImage: /img/about-1-min.jpg
 title: Experienced in a wide range of projects
 heading: What we offer
 description: >-

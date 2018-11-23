@@ -3,38 +3,58 @@ import { Link } from 'gatsby'
 
 const Footer = () => (
   <footer className="page-footer font-small stylish-color-dark pt-4">
-    <div className="container text-center text-md-left">
-
-      <div className="row">
-        <div className="col-lg-12 d-flex justify-content-between flex-wrap">
-          <div className="col-lg-2 pt-3 pb-3">
-            <h5 className="text-uppercase m-0 footer-heading">Brickscape</h5>
-          </div>
-          <div className="pt-3 pb-3 col-lg-auto offset-lg-auto d-flex justify-content-between">
-            <span className="pl-2 pr-2">Gallery</span>
-            <span className="pl-2 pr-2">Services</span>
-            <span className="pl-2 pr-2">About</span>
-            <span className="pl-2 pr-2">Contact</span>
-          </div>
+    <div className="container">
+      <div className="row footer-row">
+        <div className="col-md">
+          <h3 className="pb-3">Contact Us</h3>
+          <p className="mb-2"><a href="tel:027 831 7559">027 831 7559</a></p>
+          <p className="mb-2"><a href="mailto:ben@brickscape.co.nz">Ben@brickscape.co.nz</a></p>
+          <p className="mb-2"><a href="mailto:felicity@brickscape.co.nz">Felicity@brickscape.co.nz</a></p>
+        </div>
+        <div className="col-md">
+          <h3 className="pb-3">Quick Links</h3>
+          <ul className="navbar-nav">
+            <li className="mb-2">
+              <Link to="">
+                Home
+              </Link>
+            </li>
+            <li className="mb-2">
+              <Link to="/projects">
+                Gallery
+              </Link>
+            </li>
+            <li className="mb-2">
+              <Link to="/products">
+                Services
+              </Link>
+            </li>
+            <li className="mb-2">
+              <Link to="/about">
+                About
+            </Link>
+            </li>
+            <li className="mb-2">
+              <Link to="/contact">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="col-md">
+          <h3 className="pb-3">Brickscape</h3>
+          <p>A company whose primary focus is quality and optimum customer satisfaction. The team will tackle any brick and block laying project with professionalism and dedication.</p>
+        </div>
+        <div className="col-md footer-logo-container">
+          <img className="footer-logo" src="img/logo.png" />
         </div>
       </div>
-
     </div>
-
-    <hr />
-
-    <ul className="list-unstyled list-inline text-center py-2">
-      <li className="list-inline-item">
-        <h5 className="mb-1">Contact us now</h5>
-      </li>
-      <li className="list-inline-item">
-        <Link className="btn btn-default btn-rounded" to="/contact">
-          Lets go!
-        </Link>
-      </li>
-    </ul>
-    <div className="footer-copyright text-center py-3">© 2018 Copyright:
+    <div className="footer-copyright py-3">
+      <div className="container">
+        © 2018 Copyright:
         <span> Brickscape.com</span>
+      </div>
     </div>
 
   </footer>

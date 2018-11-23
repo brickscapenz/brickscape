@@ -193,11 +193,11 @@ h1, h2, h3 {
 }
 
 .page-footer {
-    background-color: #383E49;
-    color: white;
+    background-color: #222222;
+    color: #d6d6d6;
 
     a {
-        color: white;
+        color: #d6d6d6;
     }
 
     .btn {
@@ -206,12 +206,26 @@ h1, h2, h3 {
 }
 
 .footer-copyright {
-    background-color: #3b3d40;
-    color: white;
+    background-color: #333333;
+    color: #d6d6d6;
 
     a {
-        color: white;
+        color: #d6d6d6;
     }
+}
+
+.footer-row {
+    padding-bottom: 20px;
+}
+
+.footer-logo {
+    height: 200px;
+    width: 200px;
+}
+
+.footer-logo-container {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .background-image {
@@ -391,4 +405,9 @@ h1, h2, h3 {
 .btn-container {
     display: flex;
     justify-content: center;
+}
+
+.image-banner {
+    border-bottom: 1px solid #efefef;
+    border-top: 1px solid #efefef;
 }

@@ -34,7 +34,7 @@ const HomePageTemplate = ({ data }) => {
       </div>
 
       <div className="container-fluid">        
-        <div className="row">
+        <div className="row image-banner">
           {AddImage(data && data.imageBanner)}
         </div>       
         <div className="row">

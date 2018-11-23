@@ -19,5 +19,9 @@ imageGallery:
   - image: /img/gallery-7-min.jpg
   - image: /img/gallery-6-min.jpg
   - image: /img/gallery-3-min.jpg
+  - image: /img/gallery-4-min.jpg
+  - image: /img/gallery-5-min.jpg
+  - image: /img/gallery-8-min.jpg
+  - image: /img/gallery-9-min.jpg
 ---
 

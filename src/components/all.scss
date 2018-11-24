@@ -195,6 +195,7 @@ h1, h2, h3 {
 .page-footer {
     background-color: #222222;
     color: #d6d6d6;
+    padding-top: 20px;
 
     a {
         color: #d6d6d6;
@@ -202,6 +203,10 @@ h1, h2, h3 {
 
     .btn {
         padding: 5px 30px;
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 40px;
     }
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 const Footer = () => (
-  <footer className="page-footer font-small stylish-color-dark pt-4">
+  <footer className="page-footer font-small stylish-color-dark">
     <div className="container">
       <div className="row footer-row">
         <div className="col-md footer-col">

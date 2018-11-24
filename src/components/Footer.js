@@ -5,13 +5,12 @@ const Footer = () => (
   <footer className="page-footer font-small stylish-color-dark pt-4">
     <div className="container">
       <div className="row footer-row">
-        <div className="col-md">
+        <div className="col-md footer-col">
           <h3 className="pb-3">Contact Us</h3>
-          <p className="mb-2"><a href="tel:027 831 7559">027 831 7559</a></p>
           <p className="mb-2"><a href="mailto:ben@brickscape.co.nz">Ben@brickscape.co.nz</a></p>
           <p className="mb-2"><a href="mailto:felicity@brickscape.co.nz">Felicity@brickscape.co.nz</a></p>
         </div>
-        <div className="col-md">
+        <div className="col-md footer-col">
           <h3 className="pb-3">Quick Links</h3>
           <ul className="navbar-nav">
             <li className="mb-2">
@@ -41,7 +40,7 @@ const Footer = () => (
             </li>
           </ul>
         </div>
-        <div className="col-md">
+        <div className="col-md footer-col">
           <h3 className="pb-3">Brickscape</h3>
           <p>A company whose primary focus is quality and optimum customer satisfaction. The team will tackle any brick and block laying project with professionalism and dedication.</p>
         </div>

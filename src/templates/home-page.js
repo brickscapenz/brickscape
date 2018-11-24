@@ -67,14 +67,14 @@ const HomePageTemplate = ({ data }) => {
                 </div>   
                 <div class="card col-lg-4 bg-white text-center">
                   <div class="card-body">
-                    <i class="fas fa-heart fa-3x pb-3"></i>
+                    <i class="fas fa-dollar-sign fa-3x pb-3"></i>
                     <h5 class="card-title">Affordable</h5>
                     <p class="card-text">On time and on budget</p>
                   </div>
                 </div>    
                 <div class="card col-lg-4 bg-white text-center">
                   <div class="card-body">
-                    <i class="fas fa-dollar-sign fa-3x pb-3"></i>
+                    <i class="fas fa-heart fa-3x pb-3"></i>
                     <h5 class="card-title">Satisfaction</h5>
                     <p class="card-text">We work closely with our clients to provide them with a service nothing short of exceptional</p>
                   </div>

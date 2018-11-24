@@ -225,7 +225,11 @@ h1, h2, h3 {
 
 .footer-logo-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+        justify-content: flex-end;
+    }
 }
 
 .background-image {
@@ -410,4 +414,13 @@ h1, h2, h3 {
 .image-banner {
     border-bottom: 1px solid #efefef;
     border-top: 1px solid #efefef;
+}
+
+.footer-col {
+    padding-bottom: 20px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        text-align: left;
+    }
 }

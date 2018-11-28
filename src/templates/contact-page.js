@@ -16,11 +16,6 @@ export const ContactPageTemplate = ({ title, content, contentComponent }) => {
             <h1 className="full-width pb-5">Contact Us</h1>
             <form>
               <div className="form-group">
-                <label className="pr-3"><strong>Email us:</strong></label>
-                <label className="pr-3"><a href="mailto:ben@brickscape.co.nz">Ben@brickscape.co.nz</a></label>
-                <label className="pb-4"><a href="mailto:felicity@brickscape.co.nz">Felicity@brickscape.co.nz</a></label>
-              </div>
-              <div className="form-group">
                 <label htmlFor="name">Name</label>
                 <input className="form-control" id="name" />
               </div>

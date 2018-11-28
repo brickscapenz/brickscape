@@ -6,35 +6,51 @@ import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 
-const ServicesRow = (services) => {
-  return services.map((service) => {
+const SetImage = (image) => {
+  return {
+    backgroundImage: `url('${image}')`
+  }
+}
+
+const AddImage = (images) => {
+
+  return images && images.map((image) => {
     return (
-      <div className="row services-row">
-        <div className="col-lg-6 background-image background-image-display" style={{ 'background-image': `url(${service.image})` }}></div>
-        <div className="col-lg-6 services-content">
-          <h3>{service.title}</h3>
-          <p>{service.description}</p>
-        </div>
+      <div className="col-md-4 pl-0 pr-0">
+        <div className="background-image background-image-display" style={SetImage(image.image)}></div>
       </div>
     );
   });
 }
+
 
 export const ProductPageTemplate = ({
   image,
   title,
   heading,
   description,
-  services,
+  imageBanner,
 }) => (
   <div className="container-fluid">
     <div className="container content-container">
-      <h1 className="page-title pb-3">Brickscape services</h1>
-      <p>{description}</p>
-    </div>
-    <div>
-    {ServicesRow(services)}
-    </div>
+      <h1 className="page-title pb-5 text-center">Brickscape services</h1>
+      <ul className="text-center" style={{ listStyle: "none" }}>
+        <li>Block foundations/basements</li>
+        <li>New build brick veneer</li>
+        <li>Garden / Retaining / Boundary Walls</li>
+        <li>Brickwork repairs and maintenance</li>
+        <li>Planters boxes - Brickwork renovations</li>
+        <li>Alterations and conversions</li>
+        <li>Porches, garages and extensions</li>
+        <li>BBQ’s and Pizza Ovens</li>
+        <li>Alfresco Areas</li>
+        <li>Letterboxes</li>
+        <li>Ability to work worth a large range of brick, block, schist and stone.</li>
+      </ul>
+    </div>       
+      <div className="row image-banner">
+        {AddImage(imageBanner)}
+      </div> 
   </div>
 )
 
@@ -43,7 +59,7 @@ ProductPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
-  services: PropTypes.array,
+  imageBanner: PropTypes.array,
 }
 
 const ProductPage = ({ data }) => {
@@ -55,7 +71,7 @@ const ProductPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         description={frontmatter.description}
-        services={frontmatter.services}
+        imageBanner={frontmatter.imageBanner}
       />
     </Layout>
   )
@@ -78,12 +94,10 @@ export const productPageQuery = graphql`
         title
         heroImage
         heading
-        description    
-        services {
+        description   
+        imageBanner {
           image
-          description
-          title
-        }  
+        }
       }
     }
   }

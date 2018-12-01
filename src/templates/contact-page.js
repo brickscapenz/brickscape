@@ -14,7 +14,8 @@ export const ContactPageTemplate = ({ title, content, contentComponent }) => {
           <div className="contact-form-container">
             <div className="contact-form">
             <h1 className="full-width pb-5">Contact Us</h1>
-            <form>
+            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+              <input type="hidden" name="bot-field" />
               <div className="form-group">
                 <label className="pr-3"><strong>Email us:</strong></label>
                 <label className="pr-3"><a href="mailto:ben@brickscape.co.nz">Ben@brickscape.co.nz</a></label>

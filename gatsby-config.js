@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Gatsby + Netlify CMS Starter',
+    siteUrl: 'https://www.brickscape.co.nz',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -32,6 +33,29 @@ module.exports = {
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,        
+        exclude: ["/category/*", `/path/to/page`],
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+   
+            allSitePage {
+              edges {
+                node {
+                  path
+                }
+              }
+            }
+        }`
+      }
     },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],

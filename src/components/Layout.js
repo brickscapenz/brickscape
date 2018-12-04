@@ -8,7 +8,7 @@ import './all.scss'
 
 const TemplateWrapper = ({ children, image, homepage }) => (
   <div className="fullPageWrap">
-    <Helmet title="Home | Gatsby + Netlify CMS" />
+    <Helmet title="Brickscape - Masters in Everything Brick" />
     <Navbar />
     <Hero 
       image={image} 

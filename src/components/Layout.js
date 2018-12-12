@@ -8,7 +8,7 @@ import './all.scss'
 
 const TemplateWrapper = ({ children, image, homepage }) => (
   <div className="fullPageWrap">
-    <Helmet title={`Brickscape - ${children.props.title} - Masters in Everything Brick`} />
+    <Helmet title={`Brickscape - ${children.props.title ? children.props.title : 'Home'} - Masters in Everything Brick`} />
     <Navbar />
     <Hero 
       image={image} 

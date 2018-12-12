@@ -66,7 +66,7 @@ const ProductPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
-    <Layout image={frontmatter.heroImage}>
+    <Layout image={frontmatter.image}>
       <ProductPageTemplate        
         title={frontmatter.title}
         heading={frontmatter.heading}
@@ -92,7 +92,7 @@ export const productPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        heroImage
+        image
         heading
         description   
         imageBanner {

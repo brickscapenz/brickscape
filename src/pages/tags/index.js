@@ -1,52 +1,38 @@
 import React from 'react'
-import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 
-const TagsPage = ({
-  data: { allMarkdownRemark: { group }, site: { siteMetadata: { title } } },
-}) => (
-  <Layout>
-    <section className="section">
-      <Helmet title={`Tags | ${title}`} />
-      <div className="container content">
-        <div className="columns">
-          <div
-            className="column is-10 is-offset-1"
-            style={{ marginBottom: '6rem' }}
-          >
-            <h1 className="title is-size-2 is-bold-light">Tags</h1>
-            <ul className="taglist">
-              {group.map(tag => (
-                <li key={tag.fieldValue}>
-                  <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                    {tag.fieldValue} ({tag.totalCount})
-                  </Link>
+const TagsPage = () => (
+    <Layout>
+      <section className="section">
+        <Helmet title={`Tags | Brickscape - Bricklaying experts hamilton`} />
+        <div className="container content">
+          <div className="columns">
+            <div
+              className="column is-10 is-offset-1"
+              style={{ marginBottom: '6rem' }}
+            >
+              <h1 className="title is-size-2 is-bold-light">Tags</h1>
+              <ul className="taglist">
+                <li key="Bricklaying Home">
+                  <Link className="nav-link" to="/">Brickscape Home - Bricklaying Experts</Link>
                 </li>
-              ))}
-            </ul>
+                <li key="Bricklaying Images">
+                  <Link className="nav-link" to="/projects">Brickscape Images - Bricklaying images</Link>
+                </li>
+                <li key="Bricklaying Services">
+                  <Link className="nav-link" to="/products">Brickscape Services - Bricklaying services</Link>
+                </li>
+                <li key="Bricklaying Contact">
+                  <Link className="nav-link" to="/contact">Brickscape Contact - Bricklaying contact</Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </Layout>
-)
+      </section>
+    </Layout>
+  )
 
 export default TagsPage
-
-export const tagPageQuery = graphql`
-  query TagsQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(limit: 1000) {
-      group(field: frontmatter___tags) {
-        fieldValue
-        totalCount
-      }
-    }
-  }
-`

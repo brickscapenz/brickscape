@@ -14,5 +14,11 @@ imageBanner:
   - image: /img/home-page-3-min.jpg
 contactUsTitle: 'If you want to find out more about us, please get in contact'
 contactUsImage: /img/home-page-4-min.jpg
+date: 2018-12-17T15:04:10.000Z
+tags:
+  - bricklaying
+  - blocklaying
+  - experts
+  - hamilton
 ---
 

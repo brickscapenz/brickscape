@@ -14,6 +14,7 @@ imageBanner:
   - image: /img/home-page-3-min.jpg
 contactUsTitle: 'If you want to find out more about us, please get in contact'
 contactUsImage: /img/home-page-4-min.jpg
+pageDescription: Brickscape has been over 15 years experience in brick and block laying. We are bricklaying and blocklaying experts. Brickscape is based in Hamilton, New Zealand but does work in the greater Waikato region.
 date: 2018-12-17T15:04:10.000Z
 tags:
   - bricklaying

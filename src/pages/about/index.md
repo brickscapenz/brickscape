@@ -12,5 +12,6 @@ description: >-
   professional framework, Brickscape values attention to detail. For bricklaying
   services on time, on budget and with a smile, enquire with Ben today.
 image: /img/about-1-min.jpg
+pageDescription: Find out more about our expert hamilton, New Zealand based bricklaying and blocklaying team
 ---
 

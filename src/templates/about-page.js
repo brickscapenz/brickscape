@@ -37,6 +37,7 @@ const AboutPage = ({ data }) => {
         title={post.frontmatter.title}
         image={post.frontmatter.image}
         description={post.frontmatter.description}
+        pageDescription={post.frontmatter.pageDescription}
       />
     </Layout>
   )
@@ -57,6 +58,7 @@ export const aboutPageQuery = graphql`
         image
         heroImage
         description
+        pageDescription
       }
     }
   }

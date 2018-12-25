@@ -117,6 +117,7 @@ const ContactPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        pageDescription={post.frontmatter.pageDescription}
       />
     </Layout>
   )
@@ -135,6 +136,7 @@ export const contactPageQuery = graphql`
       frontmatter {
         title
         heroImage
+        pageDescription
       }
     }
   }

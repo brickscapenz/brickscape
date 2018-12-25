@@ -8,5 +8,6 @@ imageBanner:
   - image: /img/services-offered-1-min.jpg
   - image: /img/services-offered-2-min.jpg
   - image: /img/services-offered-3-min.jpg
+pageDescription: Interested in what bricklaying work Brickscape can do for you? Check out our range of services at Brickscape.
 ---
 

@@ -56,6 +56,7 @@ const ProjectPage = ({ data }) => {
         heading={frontmatter.heading}
         description={frontmatter.description}
         imageGallery={frontmatter.imageGallery}
+        pageDescription={frontmatter.pageDescription}
       />
     </Layout>
   )
@@ -78,7 +79,8 @@ export const projectPageQuery = graphql`
         title
         heroImage
         heading
-        description        
+        description
+        pageDescription     
         imageGallery {
           image
         }

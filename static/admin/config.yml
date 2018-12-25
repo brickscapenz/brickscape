@@ -18,6 +18,7 @@ collections:
           - {label: Hero Image, name: heroImage, widget: image}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "string"}
+          - {label: "PageDescription", name: "pageDescription", widget: "string"}
           - {label: Image, name: image, widget: image}
       - file: "src/pages/home/index.md"
         label: "Home"
@@ -33,6 +34,7 @@ collections:
           - {label: Image Banner, name: imageBanner, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}
           - {label: "Contact Us Title", name: "contactUsTitle", widget: "string"}
           - {label: Contact Us Image, name: contactUsImage, widget: image}
+          - {label: "PageDescription", name: "pageDescription", widget: "string"}
       - file: "src/pages/products/index.md"
         label: "Services Page"
         path: "products"
@@ -44,6 +46,7 @@ collections:
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
           - {label: Image Banner, name: imageBanner, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}
+          - {label: "PageDescription", name: "pageDescription", widget: "string"}
       - file: "src/pages/projects/index.md"
         label: "Gallery Page"
         path: "projects"
@@ -55,6 +58,7 @@ collections:
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
           - {label: Image Gallery, name: imageGallery, widget: list, fields: [{label: Image, name: image, widget: image}]}
+          - {label: "PageDescription", name: "pageDescription", widget: "string"}
       - file: "src/pages/contact/index.md"
         label: "Contact Page"
         path: "contact"
@@ -63,3 +67,4 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
           - {label: Hero Image, name: heroImage, widget: image}
           - {label: Title, name: title, widget: string}
+          - {label: "PageDescription", name: "pageDescription", widget: "string"}

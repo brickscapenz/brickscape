@@ -15,5 +15,6 @@ imageGallery:
   - image: /img/gallery-5-min.jpg
   - image: /img/gallery-8-min.jpg
   - image: /img/gallery-9-min.jpg
+pageDescription: See some of the great work that the Bricklaying and Blocklaying experts at Brickscape have done.
 ---
 

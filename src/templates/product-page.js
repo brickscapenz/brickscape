@@ -72,6 +72,7 @@ const ProductPage = ({ data }) => {
         heading={frontmatter.heading}
         description={frontmatter.description}
         imageBanner={frontmatter.imageBanner}
+        pageDescription={frontmatter.pageDescription}
       />
     </Layout>
   )
@@ -94,7 +95,8 @@ export const productPageQuery = graphql`
         title
         image
         heading
-        description   
+        description
+        pageDescription
         imageBanner {
           image
         }

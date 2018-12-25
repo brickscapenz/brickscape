@@ -16,9 +16,10 @@ export default class IndexPage extends React.Component {
         image={markdownRemark.frontmatter.heroImage} 
         homepage={true}
         heroTitle={markdownRemark.frontmatter.heroTitle}
-        herContent={markdownRemark.frontmatter.herContent}>   
+        heroContent={markdownRemark.frontmatter.heroContent}>
         <HomePageTemplate
           data={props}
+          pageDescription={markdownRemark.frontmatter.pageDescription}
         />
       </Layout>
     )
@@ -42,6 +43,7 @@ export const HomePageQuery = graphql`
         templateKey
         contactUsTitle
         contactUsImage
+        pageDescription
         imageBanner {
           image
         }

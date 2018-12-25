@@ -15,7 +15,6 @@ export const AboutPageTemplate = ({ title, image, description }) => {
           <div dangerouslySetInnerHTML={{ __html: description }}></div>
         </div>
         <div className="background-image background-image-display m-0" style={{ 'background-image': `url('${image}')`}}></div>
-        <div class="text-center">Our team</div>
       </div>
     </div>
   </div>

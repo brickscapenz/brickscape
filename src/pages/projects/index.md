@@ -5,7 +5,6 @@ title: Experienced in a wide range of projects
 heading: What we offer
 description: ' '
 imageGallery:
-  - image: /img/foundations.jpg
   - image: /img/gallery-1-min.jpg
   - image: /img/gallery-10-min.jpg
   - image: /img/gallery-7-min.jpg
@@ -15,6 +14,9 @@ imageGallery:
   - image: /img/gallery-5-min.jpg
   - image: /img/gallery-8-min.jpg
   - image: /img/gallery-9-min.jpg
-pageDescription: See some of the great work that the Bricklaying and Blocklaying experts at Brickscape have done.
+  - image: /img/gallery-2-min.jpg
+pageDescription: >-
+  See some of the great work that the Bricklaying and Blocklaying experts at
+  Brickscape have done.
 ---
 

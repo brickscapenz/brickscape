@@ -60,7 +60,20 @@ export class ContactPageTemplate extends React.Component {
 
     if (this.state.emailInvalid || this.state.nameInvalid || this.state.messageInvalid) {      
       return;
-    }   
+    }
+    
+    const form = e.target;
+    
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state
+      })
+    })
+    .then(() => navigateTo(form.getAttribute("action")))
+    .catch(error => alert(error));
   }
 
   render () {

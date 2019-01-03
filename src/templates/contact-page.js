@@ -92,7 +92,7 @@ export class ContactPageTemplate extends React.Component {
             <div className="contact-form-container">
               <div className="contact-form">
               <h1 className="full-width pb-5">Contact Us</h1>
-              <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+              <form name="contact" method="post" netlify data-netlify="true" data-netlify-honeypot="bot-field">
                 <input type="hidden" name="bot-field" />
                 <input type="hidden" name="form-name" value="contact" />
                 <div className="form-group">

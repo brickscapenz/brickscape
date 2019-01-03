@@ -62,7 +62,7 @@ export class ContactPageTemplate extends React.Component {
       return;
     }
     
-    const form = e.target;
+    const form = event.target;
     
     fetch("/", {
       method: "POST",

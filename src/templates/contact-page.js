@@ -19,11 +19,12 @@ export class ContactPageTemplate extends React.Component {
               <div className="contact-form">
               <h1 className="full-width pb-5">Contact Us</h1>
               <form
-                name="contact-form"
+                name="contact"
                 method="post"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
               >
+                <input type="hidden" name="form-name" value="contact" />
                 <input name="name" placeholder="Your Name" type="text" />
                 <input name="email" placeholder="name@name.com" type="email" />
                 <textarea name="message" />

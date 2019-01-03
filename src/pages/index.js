@@ -12,7 +12,6 @@ export default class IndexPage extends React.Component {
     const props = markdownRemark.frontmatter;
 
     return (
-      <div>
       <Layout 
         image={markdownRemark.frontmatter.heroImage} 
         homepage={true}
@@ -23,18 +22,6 @@ export default class IndexPage extends React.Component {
           pageDescription={markdownRemark.frontmatter.pageDescription}
         />
       </Layout>
-      <form
-        name="contact-form"
-        method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-      >
-        <input name="name" placeholder="Your Name" type="text" />
-        <input name="email" placeholder="name@name.com" type="email" />
-        <textarea name="message" />
-        <button>Send</button>
-      </form>
-      </div>
     )
   }
 }

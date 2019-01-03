@@ -66,11 +66,13 @@ export class ContactPageTemplate extends React.Component {
     
     fetch("/", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: escape({
-        "form-name": form.getAttribute("name"),
-        ...this.state
-      })
+      headers: { "Content-Type": "application/json" },
+      body: {
+        'form-name': 'contact',
+        'name': this.state.name,
+        'email': this.state.email,
+        'message': this.state.message,
+      }
     })
     .then(() => window.location.href = '/contact')
     .catch(error => alert(error));

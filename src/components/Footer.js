@@ -4,12 +4,7 @@ import { Link } from 'gatsby'
 const Footer = () => (
   <footer className="page-footer font-small stylish-color-dark">
     <div className="container">
-      <div className="row footer-row">
-        <div className="col-md footer-col">
-          <h3 className="pb-3">Contact Us</h3>
-          <p className="mb-2"><a href="mailto:ben@brickscape.co.nz">Ben@brickscape.co.nz</a></p>
-          <p className="mb-2"><a href="mailto:felicity@brickscape.co.nz">Felicity@brickscape.co.nz</a></p>
-        </div>
+      <div className="row footer-row">      
         <div className="col-md footer-col">
           <h3 className="pb-3">Quick Links</h3>
           <ul className="navbar-nav">

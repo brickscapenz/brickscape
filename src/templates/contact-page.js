@@ -18,6 +18,12 @@ export class ContactPageTemplate extends React.Component {
     }
   };
 
+  encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+
   setValue (event) {
     const id = event.target.id;
     const value = event.target.value;
@@ -67,12 +73,12 @@ export class ContactPageTemplate extends React.Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: {
+      body: this.encode({
         'form-name': 'contact',
         'name': this.state.name,
         'email': this.state.email,
         'message': this.state.message,
-      }
+      })
     })
     .then(() => window.location.href = '/contact')
     .catch(error => alert(error));
@@ -88,6 +94,7 @@ export class ContactPageTemplate extends React.Component {
               <h1 className="full-width pb-5">Contact Us</h1>
               <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
                 <input type="hidden" name="bot-field" />
+                <input type="hidden" name="form-name" value="contact" />
                 <div className="form-group">
                   <label htmlFor="name">Name</label>
                   <input onChange={(event) => this.setValue(event)} className="form-control" id="name" style={this.state.nameInvalid ? {border: 'solid 1px red'} : {}} />

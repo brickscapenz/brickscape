@@ -67,12 +67,12 @@ export class ContactPageTemplate extends React.Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
+      body: escape({
         "form-name": form.getAttribute("name"),
         ...this.state
       })
     })
-    .then(() => navigateTo(form.getAttribute("action")))
+    .then(() => window.location.href = '/contact')
     .catch(error => alert(error));
   }
 

@@ -18,22 +18,16 @@ export class ContactPageTemplate extends React.Component {
             <div className="contact-form-container">
               <div className="contact-form">
               <h1 className="full-width pb-5">Contact Us</h1>
-              <form name="contact-form" method="post" netlify data-netlify="true" data-netlify-honeypot="bot-field">
-                <div className="form-group">
-                  <label htmlFor="name">Name</label>
-                  <input className="form-control" name="name" />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="email">Email address</label>
-                  <input type="email" className="form-control" name="email" placeholder="name@example.com" />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="message">Message</label>
-                  <textarea className="form-control" name="message" rows="5"></textarea>
-                </div>
-                <div className="form-group float-right">
-                  <button>Send</button>
-                </div>
+              <form
+                name="contact-form"
+                method="post"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+              >
+                <input name="name" placeholder="Your Name" type="text" />
+                <input name="email" placeholder="name@name.com" type="email" />
+                <textarea name="message" />
+                <button>Send</button>
               </form>
               </div>
             </div>

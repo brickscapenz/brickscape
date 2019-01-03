@@ -7,82 +7,8 @@ import Content, { HTMLContent } from '../components/Content'
 export class ContactPageTemplate extends React.Component {
   constructor (props) {
     super(props);
-    this.state = {
-      email: '',
-      name: '',
-      message: '',
-      emailInvalid: false,
-      nameInvalid: false,
-      messageInvalid: false,
-      validated: false,
-    }
   };
 
-  encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-  }
-
-  setValue (event) {
-    const id = event.target.id;
-    const value = event.target.value;
-    this.setState({
-      [id]: value
-    }, () => this.validate())
-  };
-
-  validate () {
-    if (!this.state.validated) {
-      return;
-    }
-
-    this.setState({
-      emailInvalid: false,
-      nameInvalid: false,
-      messageInvalid: false,
-    })
-
-    if (!this.state.email) {
-      this.setState({
-        emailInvalid: true
-      });
-    }
-    if (!this.state.name) {
-      this.setState({
-        nameInvalid: true
-      });
-    }
-    if (!this.state.message) {
-      this.setState({
-        messageInvalid: true
-      });
-    }
-  }
-
-  submit (event) {    
-    event.preventDefault();
-    this.setState({ validated: true}, () => this.validate());
-
-    if (this.state.emailInvalid || this.state.nameInvalid || this.state.messageInvalid) {      
-      return;
-    }
-    
-    const form = event.target;
-    
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: this.encode({
-        'form-name': 'contact',
-        'name': this.state.name,
-        'email': this.state.email,
-        'message': this.state.message,
-      })
-    })
-    .then(() => window.location.href = '/contact')
-    .catch(error => alert(error));
-  }
 
   render () {
     return (
@@ -93,22 +19,20 @@ export class ContactPageTemplate extends React.Component {
               <div className="contact-form">
               <h1 className="full-width pb-5">Contact Us</h1>
               <form name="contact" method="post" netlify data-netlify="true" data-netlify-honeypot="bot-field">
-                <input type="hidden" name="bot-field" />
-                <input type="hidden" name="form-name" value="contact" />
                 <div className="form-group">
                   <label htmlFor="name">Name</label>
-                  <input onChange={(event) => this.setValue(event)} className="form-control" id="name" style={this.state.nameInvalid ? {border: 'solid 1px red'} : {}} />
+                  <input className="form-control" id="name" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="email">Email address</label>
-                  <input type="email" onChange={(event) => this.setValue(event)} className="form-control" id="email" placeholder="name@example.com" style={this.state.emailInvalid ? {border: 'solid 1px red'} : {}} />
+                  <input type="email" className="form-control" id="email" placeholder="name@example.com" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="message">Message</label>
-                  <textarea onChange={(event) => this.setValue(event)} value={this.state.message} className="form-control" id="message" rows="5" style={this.state.messageInvalid ? {border: 'solid 1px red'} : {}}></textarea>
+                  <textarea className="form-control" id="message" rows="5"></textarea>
                 </div>
                 <div className="form-group float-right">
-                  <input id="submit" onClick={(event) => this.submit(event)} type="submit" className="btn btn-default" />
+                  <input id="submit" type="submit" className="btn btn-default" />
                 </div>
               </form>
               </div>

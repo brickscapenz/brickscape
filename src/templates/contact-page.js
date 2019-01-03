@@ -25,10 +25,21 @@ export class ContactPageTemplate extends React.Component {
                 data-netlify-honeypot="bot-field"
               >
                 <input type="hidden" name="form-name" value="contact" />
-                <input name="name" placeholder="Your Name" type="text" />
-                <input name="email" placeholder="name@name.com" type="email" />
-                <textarea name="message" />
-                <button>Send</button>
+                <div className="form-group">
+                  <label htmlFor="name">Name</label>
+                  <input name="name" placeholder="Your Name" type="text" className="form-control" />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="email">Email address</label>
+                  <input name="email" placeholder="name@name.com" type="email" className="form-control" />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="message">Message</label>
+                  <textarea name="message" className="form-control" />
+                </div>
+                <div className="float-right form-group">
+                  <button className="btn btn-default">Send</button>
+                </div>
               </form>
               </div>
             </div>

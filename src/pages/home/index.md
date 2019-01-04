@@ -4,10 +4,7 @@ heroImage: /img/home-page-1-min.jpg
 heroTitle: Masters in Everything Brick
 heroContent: Quality brick and block laying services that stand out above the rest
 bodyTitle: Brickscape
-bodyContent: >-
-  A company whose primary focus is quality and optimum customer satisfaction.
-  The team will tackle any brick and block laying project with professionalism
-  and dedication.
+bodyContent: If you are looking for a bricklayer or blocklayer in Hamilton or the greater Waikato- then look no further then Brickscape. A company whose primary focus is quality and optimum customer satisfaction. The team will tackle any brick and block laying project with professionalism and dedication.
 imageBanner:
   - image: /img/home-page-2-min.jpg
   - image: /img/brickscape-logo-min.jpg

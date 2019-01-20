@@ -30,7 +30,7 @@ const HomePageTemplate = ({ data }) => {
     <div>
       <div className='container content-container'>
         <h1 className="page-title pb-4">{data && data.bodyTitle}</h1>
-        <div className="text-center" dangerouslySetInnerHTML={{  __html: data && data.bodyContent }}></div>
+        <div className="text-center"><p dangerouslySetInnerHTML={{  __html: data && data.bodyContent }}></p></div>
       </div>
 
       <div className="container-fluid">        

@@ -2,41 +2,63 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
 
-const AddImages = (images) => {
-  let columnOne = '';
-  let columnTwo = '';
+export class ProjectPageTemplate extends React.Component {
+  constructor(props) {
+    super(props);
 
-  images && images.forEach((image, index) => {
-    if (index % 2 == 0) {
-      columnOne += `<div class="background-image background-image-display gallery-image" style="background-image: url(${image.image})"></div>`;
-    } else {
-      columnTwo += `<div class="background-image background-image-display gallery-image" style="background-image: url(${image.image})"></div>`;
-    }
-  });
-
-  var a = {
-    __html: `<div class="row"><div class="col-lg-6">${columnOne}</div><div class="col-lg-6">${columnTwo}</div></div>`
+    this.state = {
+      photoIndex: 0,
+      isOpen: false,
+      images: this.props.imageGallery,
+    };
   }
-  return a;
-}
 
-export const ProjectPageTemplate = ({
-  image,
-  title,
-  heading,
-  description,
-  imageGallery,
-}) => (
-  <div className="container content-container">
-    <div className="gallery-heading-container">
-      <h1 className="page-title pb-3">Gallery</h1>
-      <div dangerouslySetInnerHTML={{ __html: description }}></div>
-    </div>
-    <div dangerouslySetInnerHTML={AddImages(imageGallery)}>
-    </div>
-  </div>
-)
+  addImage = (image) => {
+      return <div className="background-image background-image-display gallery-image" onClick={this.openLightBox} style={{'background-image': `url(${image.image})`}}></div>
+  }
+
+  openLightBox = () => {
+    this.setState({ isOpen: true });
+  }
+
+  render() {
+    const { images, photoIndex, isOpen } = this.state;
+
+    return (
+      <div className="container content-container">
+        <div className="gallery-heading-container">
+          <h1 onClick={this.openLightBox} className="page-title pb-3">Gallery</h1>
+          <div dangerouslySetInnerHTML={{ __html: this.props.description }}></div>
+        </div>
+        <div className="row">
+          <div className="col-md-6">{this.props.imageGallery.filter((x, i) => i % 2 == 0).map(x => this.addImage(x))}</div>
+          <div className="col-md-6">{this.props.imageGallery.filter((x, i) => i % 2 != 0).map(x => this.addImage(x))}</div>       
+        </div>
+        {isOpen && (
+          <Lightbox
+          mainSrc={images[photoIndex].image}
+          nextSrc={images[(photoIndex + 1) % images.length].image}
+          prevSrc={images[(photoIndex + images.length - 1) % images.length].image}
+          onCloseRequest={() => this.setState({ isOpen: false })}
+          onMovePrevRequest={() =>
+            this.setState({
+              photoIndex: (photoIndex + images.length - 1) % images.length,
+            })
+          }
+          onMoveNextRequest={() =>
+            this.setState({
+              photoIndex: (photoIndex + 1) % images.length,
+            })
+          }
+        />
+        )}
+      </div>
+    )
+  }
+}
 
 ProjectPageTemplate.propTypes = {
   image: PropTypes.string,

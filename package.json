@@ -7,7 +7,7 @@
     "@fortawesome/fontawesome-free": "^5.4.1",
     "animate.css": "^3.7.0",
     "bulma": "^0.7.0",
-    "gatsby": "^2.0.0",
+    "gatsby": "^2.32.13",
     "gatsby-cli": "^2.4.2",
     "gatsby-image": "^2.0.25",
     "gatsby-plugin-netlify": "^2.0.0",
